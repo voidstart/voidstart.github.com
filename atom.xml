@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Pointer to anything]]></title>
+  <title><![CDATA[void *t - pointer to nothing]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-14T22:06:52+08:00</updated>
+  <updated>2013-11-14T22:54:34+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[bootstrap...]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/14/bootstrap-dot-dot-dot/"/>
+    <updated>2013-11-14T22:35:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/14/bootstrap-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>Hello</p>
+]]></content>
+  </entry>
   
 </feed>

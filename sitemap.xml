@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://voidstart.github.io/blog/2013/11/14/bootstrap-dot-dot-dot/</loc>
+        <lastmod>2013-11-14T22:54:20+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://voidstart.github.io/blog/archives/</loc>
-        <lastmod>2013-11-14T14:25:00+08:00</lastmod>
+        <lastmod>2013-11-14T22:54:20+08:00</lastmod>
     </url>
     <url>
         <loc>http://voidstart.github.io/</loc>
-        <lastmod>2013-11-14T14:25:00+08:00</lastmod>
+        <lastmod>2013-11-14T22:54:20+08:00</lastmod>
     </url>
     <url>
         <loc>http://voidstart.github.io/robots.txt</loc>
