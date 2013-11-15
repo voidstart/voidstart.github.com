@@ -4,7 +4,7 @@
   <title><![CDATA[I'm Wang Wei, a web-developer-in-progress, still loves C++]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-15T22:40:57+08:00</updated>
+  <updated>2013-11-15T22:46:56+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -25,7 +25,7 @@ to web development.</p>
 to become an indie developer. I am kind of idealistic
 enough to believe in <a href="http://37signals.com/remote/">remote work</a>.</p>
 
-<p>For web development, Ruby on Rails is of particular
+<p>For web development, <a href="http://rubyonrails.org/">Ruby on Rails</a> is of particular
 interest. It&rsquo;s neat.  The community is extremely
 active and vibrant. I guess I&rsquo;ll start from here,
 see how it goes.</p>
