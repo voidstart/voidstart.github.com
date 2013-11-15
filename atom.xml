@@ -4,7 +4,7 @@
   <title><![CDATA[I'm Wang Wei, a web-developer-in-progress, still loves C++]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-15T22:46:56+08:00</updated>
+  <updated>2013-11-15T23:11:20+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 1]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/15/ror-day-1/"/>
+    <updated>2013-11-15T22:53:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/15/ror-day-1</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>setup rbenv,rails</li>
+<li>page 47/476</li>
+</ul>
+
+
+<h1>&ldquo;convention over configuration&rdquo;</h1>
+
+<p>I think this philosophy is quite smart.
+Naming things is very hard, and a clean
+convention solves lot of troubles.
+Plus the cost of communication is lower.
+Just by looking at a name we can know
+some extra information.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[bootstrap...]]></title>
