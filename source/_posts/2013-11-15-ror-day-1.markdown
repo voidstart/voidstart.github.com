@@ -1,0 +1,21 @@
+---
+layout: post
+title: "RoR Day 1"
+date: 2013-11-15 22:53
+comments: true
+categories: 
+---
+
+Progress
+=
+- setup rbenv,rails
+- page 47/476
+
+"convention over configuration"
+=
+I think this philosophy is quite smart.
+Naming things is very hard, and a clean 
+convention solves lot of troubles.
+Plus the cost of communication is lower.
+Just by looking at a name we can know 
+some extra information.
