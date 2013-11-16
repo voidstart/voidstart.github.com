@@ -4,7 +4,7 @@
   <title><![CDATA[I'm Wang Wei, a web-developer-in-progress, still loves C++]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-15T23:11:20+08:00</updated>
+  <updated>2013-11-16T23:17:11+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR day 2]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/16/ror-day-2/"/>
+    <updated>2013-11-16T23:07:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/16/ror-day-2</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>play with &lt;% %> and &lt;%= %> syntax</li>
+<li>review MVC concept</li>
+<li>page 52/476</li>
+</ul>
+
+
+<h1>Separation of Concerns</h1>
+
+<p>Model, View, Controller is a good way for humans
+to understand computer codes, at least some kinds
+of them.</p>
+
+<p>The particular senario this methodology addresses
+is a stateful, interactive, perspective application.</p>
+
+<p>There are many kinds of codes. It&rsquo;s hard to model
+something like a device driver with MVC.</p>
+
+<p>&ldquo;GUI + storage + business-logic&rdquo; is a very common
+case, especially a website.</p>
+
+<p>This convention forces the way of thinking, and makes
+it easier to reason. In essense, MVC itself is a
+design decision.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 1]]></title>
