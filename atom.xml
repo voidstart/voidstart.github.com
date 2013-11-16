@@ -4,7 +4,7 @@
   <title><![CDATA[I'm Wang Wei, a web-developer-in-progress, still loves C++]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-16T23:17:11+08:00</updated>
+  <updated>2013-11-16T23:19:11+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -27,7 +27,9 @@
 </ul>
 
 
-<h1>Separation of Concerns</h1>
+<p>(got only about 1 hour of free time today)</p>
+
+<h1>&ldquo;Separation of Concerns&rdquo;</h1>
 
 <p>Model, View, Controller is a good way for humans
 to understand computer codes, at least some kinds
