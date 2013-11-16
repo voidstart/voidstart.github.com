@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RoR day 2"
+title: "RoR Day 2"
 date: 2013-11-16 23:07
 comments: true
 categories: 
