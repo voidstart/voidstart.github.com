@@ -1,0 +1,32 @@
+---
+layout: post
+title: "RoR day 2"
+date: 2013-11-16 23:07
+comments: true
+categories: 
+---
+
+Progress
+=
+- play with <% %> and <%= %> syntax
+- review MVC concept
+- page 52/476
+
+Separation of Concerns
+=
+Model, View, Controller is a good way for humans
+to understand computer codes, at least some kinds
+of them.
+
+The particular senario this methodology addresses
+is a stateful, interactive, perspective application.
+
+There are many kinds of codes. It's hard to model
+something like a device driver with MVC.
+
+"GUI + storage + business-logic" is a very common
+case, especially a website.
+
+This convention forces the way of thinking, and makes
+it easier to reason. In essense, MVC itself is a
+design decision.
