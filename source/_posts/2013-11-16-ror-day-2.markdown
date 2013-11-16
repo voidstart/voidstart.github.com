@@ -12,7 +12,9 @@ Progress
 - review MVC concept
 - page 52/476
 
-Separation of Concerns
+(got only about 1 hour of free time today)
+
+"Separation of Concerns"
 =
 Model, View, Controller is a good way for humans
 to understand computer codes, at least some kinds
