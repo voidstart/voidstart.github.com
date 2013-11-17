@@ -7,16 +7,49 @@ sharing: true
 footer: true
 ---
 
-Wang Wei
+About Me
 =
+My name is Wang Wei. I write software and do a bit of consultancy on it.
+
+Besides software, I also enjoy swimming, basketball, table tennis and most recently, cooking.
+
+I am happily married and expecting a child in early next year.
+
 
 Education
 =
-[China-Singapore MOE Program](http://www.view.sdu.edu.cn/news/news/sdyw/2003-06-25/1056531327.html), Major in [Mathematics and Applied Mathematics](http://www.maths.sdu.edu.cn/school-introduction), [Shandong Univeristy](http://www.sdu.edu.cn/english/), China (2003)
-BE in Computer Engineering,[Nanyang Technological Univerisity](http://www.ntu.edu.sg), Singapore (2004-2008)
-- [Mobile Robot](http://sce.ntu.edu.sg/CurrentStudents/Undergraduate/Documents/DDP_CPE279.pdf)
+
+[Shandong Univeristy](http://www.sdu.edu.cn/english/), Major in [Mathematics and Applied Mathematics](http://baike.baidu.com/view/95139.htm), Jinan, China *(2003)*
+
+[National Institute of Education](http://www.nie.edu.sg), English Training, [China-Singapore MOE Program](http://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%B0%E5%A5%96%E5%AD%A6%E9%87%91%E9%A1%B9%E7%9B%AE), Singapore *(2004)*
+
+[Nanyang Technological Univerisity](http://www.ntu.edu.sg), BE in Computer Engineering, Singapore *(2004 - 2008)*
+
+
 
 Work
 =
-[TUV SUD](http://www.
+Intern C# Programmer, [Yokogawa Asia](http://www.yokogawa.com/sg/), Singapore *(2007)*
+
+[SharePoint](http://office.microsoft.com/en-us/sharepoint/) Developer/Consultant, with [Borneo Motors](http://www.borneomotors.com.sg/), [Singapore American School](http://www.sas.edu.sg/), [ChassAsia](http://www.chassasia.com) *(2008)*
+
+SharePoint Engineer, [TÜV SÜD Group](http://www.tuv-sud.com/), Singapore *(2009)*
+
+R&D Engineer, [GDC Technology](http://www.gdc-tech.com), Hong Kong *(2009-2013)*
+
+Software designer, [Hisense Group](http://www.hisense.com), Qingdao, China *(2013)*
+
+Freelance Projects
+=
+[FloristChat](http://floristchat.com/), belongs to [LocalStreets.com](http://www.localstreets.com)
+
+School projects
+=
+[Mobile Robot (DDP), NTU](http://sce.ntu.edu.sg/CurrentStudents/Undergraduate/Documents/DDP_CPE279.pdf)
+
+Studies
+=
+I studied microcontroller/microprocessor system design, electronics and digital circuits, digital communication, instrumentation, discrete mathematics and algorithms, game programming and graphics, networks, operating systems, database systems and cryptography.
+
+
 
