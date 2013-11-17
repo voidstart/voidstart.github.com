@@ -4,7 +4,7 @@
   <title><![CDATA[I'm Wang Wei, a web-developer-in-progress, still loves C++]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-17T23:52:40+08:00</updated>
+  <updated>2013-11-17T23:58:51+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -34,6 +34,12 @@ This is a powerful feature of the Ruby language.
 The &ldquo;yeild&rdquo; call is interesting.  For-loops can be
 much different and this solves a lot of abstraction
 issue with things like the &ldquo;visitor pattern&rdquo;.</p>
+
+<p>Active Records solves another issue with repetative
+duplication logic with class objects and database
+tables. They are very simular things in a way, but
+are much different to access. Active Records is a
+device for adapting the differences of access.</p>
 ]]></content>
   </entry>
   
