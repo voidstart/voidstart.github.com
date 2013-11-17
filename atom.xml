@@ -4,7 +4,7 @@
   <title><![CDATA[I'm Wang Wei, a web-developer-in-progress, still loves C++]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-17T23:26:34+08:00</updated>
+  <updated>2013-11-17T23:52:40+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 3]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/17/ror-day-3/"/>
+    <updated>2013-11-17T23:43:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/17/ror-day-3</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>Object-Relational Mapping (ORM,Active Record)</li>
+<li>Ruby Syntax (array,hash,block,exception)</li>
+<li>page 70/476</li>
+</ul>
+
+
+<h1>&ldquo;First class function&rdquo;</h1>
+
+<p>Block of codes can be passed to functions as values.
+This is a powerful feature of the Ruby language.
+The &ldquo;yeild&rdquo; call is interesting.  For-loops can be
+much different and this solves a lot of abstraction
+issue with things like the &ldquo;visitor pattern&rdquo;.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 2]]></title>
