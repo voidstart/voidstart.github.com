@@ -1,0 +1,23 @@
+---
+layout: post
+title: "RoR Day 3"
+date: 2013-11-17 23:43
+comments: true
+categories: 
+---
+
+Progress
+=
+- Object-Relational Mapping (ORM,Active Record)
+- Ruby Syntax (array,hash,block,exception)
+- page 70/476
+
+"First class function"
+=
+
+Block of codes can be passed to functions as values.
+This is a powerful feature of the Ruby language.
+The "yeild" call is interesting.  For-loops can be
+much different and this solves a lot of abstraction
+issue with things like the "visitor pattern".
+
