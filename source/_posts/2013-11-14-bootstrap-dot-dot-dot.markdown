@@ -6,13 +6,13 @@ comments: true
 categories: 
 ---
 
-Hello, this post marks the beginning of my shifting
-to web development. 
+Hello, this post marks the beginning of my coder blog.
 
 The making of this blog has been part of my efforts 
 to become an indie developer. I am kind of idealistic
 enough to believe in [remote work](http://37signals.com/remote/).
 
+I am getting interested in web programming recently.
 For web development, [Ruby on Rails](http://rubyonrails.org/) is of particular 
 interest. It's neat.  The community is extremely 
 active and vibrant. I guess I'll start from here, 
