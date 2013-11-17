@@ -12,8 +12,10 @@ Wang Wei
 
 Education
 =
-[Nanyang Technological Univerisity](www.ntu.edu.sg)
+[Nanyang Technological Univerisity](http://www.ntu.edu.sg)
+- [Mobile Robot](http://sce.ntu.edu.sg/CurrentStudents/Undergraduate/Documents/DDP_CPE279.pdf)
 
 Work
 =
+[TUV SUD](http://www.
 
