@@ -52,4 +52,13 @@ Studies
 I studied microcontroller/microprocessor system design, electronics and digital circuits, digital communication, instrumentation, discrete mathematics and algorithms, game programming and graphics, networks, operating systems, database systems and cryptography.
 
 
+Research
+=
+I did some unpublished research on algorithms comparison in video streaming back in college under [Professor Stephen John Turner](http://www.ntu.edu.sg/home/assjturner/) in 2007-2008. My current research interests are very different, though: Programming langauges, Concurrency and Parallellism, Image processing.
+
+Languages
+=
+Primary: C++, but I have also used: Python, Java, C#, Perl, PHP, Bash for projects.
+
+I am learning Ruby on Rails, interested in Go, Erlang, Haskell, Ocaml.
 
