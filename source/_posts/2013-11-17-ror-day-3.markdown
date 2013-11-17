@@ -21,3 +21,9 @@ The "yeild" call is interesting.  For-loops can be
 much different and this solves a lot of abstraction
 issue with things like the "visitor pattern".
 
+Active Records solves another issue with repetative 
+duplication logic with class objects and database
+tables. They are very simular things in a way, but
+are much different to access. Active Records is a
+device for adapting the differences of access.
+
