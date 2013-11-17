@@ -39,6 +39,32 @@ R&D Engineer, [GDC Technology](http://www.gdc-tech.com), Hong Kong *(2009-2013)*
 
 Software designer, [Hisense Group](http://www.hisense.com), Qingdao, China *(2013)*
 
+
+Work Projects
+=
+## Digital Cinema
+### Subtitle Overlay
+Enable cinemas to show movies with live-rendered subtitles, widely used in China, Korea and Japan.
+### Closed Caption
+Enable Hearing-Impaired (deafness) and Vision-Impaired (blindness) people to enjoy movies, widely deployed in USA and Canada.
+### Sensio(TM) 3D image demuxer
+Used for 2010 South Africa FIFA World Cup cinema casting. Implement a proprietory demuxing algorithm together with Sensio.
+### Dolby(TM) 3D Color Correction
+Used for cinema projector/server color calibration for Dolby(TM) 3D setup, deployed in production systems throughout the world.
+### Embedd Linux(Host/Target) System Upgrader
+Used for cinema software upgrade to DCI compliant standard, worldwide deployment. 
+## Microsoft SharePoint(TM)
+Provided SharePoint consulting services on enterprise-level deployment,configuration and customization, to various organizations and companies.
+Provided professional SharePoint(TM) training to employees (taught about 200 students)
+## Other
+### Build Automation
+### Excel(TM) Automation Tool
+###  
+## Smart TV
+### Android Media Middleware
+Gstreamer based framework for mux/demux, encode/decode and file/network protocols handling. A research project in progress.
+
+
 Freelance Projects
 =
 [FloristChat](http://floristchat.com/), belongs to [LocalStreets.com](http://www.localstreets.com)
