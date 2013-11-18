@@ -11,7 +11,7 @@ Progress
 - setup rbenv,rails
 - page 47/476
 
-"convention over configuration"
+"Convention over Configuration"
 =
 I think this philosophy is quite smart.
 Naming things is very hard, and a clean 
