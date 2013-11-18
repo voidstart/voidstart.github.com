@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-18T09:57:54+08:00</updated>
+  <updated>2013-11-18T15:18:58+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 4]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/18/ror-day-4/"/>
+    <updated>2013-11-18T14:59:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/18/ror-day-4</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>More ruby syntax (require,||, bang method, prediate method)</li>
+<li>Depot app (pencil and paper design, db migrate/seed, sass, validation)</li>
+<li>page 100/476</li>
+</ul>
+
+
+<h1>&ldquo;Scaffold&rdquo;</h1>
+
+<p>This is not a new idea. MS word has &ldquo;template&rdquo; documents.
+Things are given to solve a particular common problem, with minimal defaults, which
+can be viewed as &ldquo;conventions&rdquo;.</p>
+
+<p>Common tasks like add a controller, add a table, a field, where to put stylesheets,
+where to put validation, where to put tests&hellip; All have a &ldquo;conventional&rdquo; answer.</p>
+
+<p>Developers&#8217; needs are addressed to be easy to get started. Brilliant.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 3]]></title>
