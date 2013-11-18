@@ -10,7 +10,7 @@ Progress
 =
 - More ruby syntax (require,||, bang method, predicate method)
 - Depot app (pencil and paper design, db migrate/seed, sass, validation)
-- page 100/476
+- page 108/476
 
 "Scaffold"
 =
