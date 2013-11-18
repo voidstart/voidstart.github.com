@@ -15,7 +15,7 @@ Progress
 "Scaffold"
 =
 This is not a new idea. MS word has "template" documents.
-Things are given to solve a particular problem, with minimal defaults, which
+Things are given to solve a particular common problem, with minimal defaults, which
 can be viewed as "conventions".
 
 Common tasks like add a controller, add a table, a field, where to put stylesheets,
