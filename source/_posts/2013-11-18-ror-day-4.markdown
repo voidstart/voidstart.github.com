@@ -1,0 +1,26 @@
+---
+layout: post
+title: "RoR Day 4"
+date: 2013-11-18 14:59
+comments: true
+categories: 
+---
+
+Progress
+=
+- More ruby syntax (require,||, bang method, prediate method)
+- Depot app (pencil and paper design, db migrate/seed, sass, validation)
+- page 100/476
+
+"Scaffold"
+=
+This is not a new idea. MS word has "template" documents.
+Things are given to solve a particular problem, with minimal defaults, which
+can be viewed as "conventions".
+
+Common tasks like add a controller, add a table, a field, where to put stylesheets,
+where to put validation, where to put tests... All have a "conventional" answer.
+
+Developers' needs are addressed to be easy to get started. Brilliant.
+
+
