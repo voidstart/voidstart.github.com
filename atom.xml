@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-18T22:34:14+08:00</updated>
+  <updated>2013-11-18T22:43:51+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -120,7 +120,7 @@ design decision.</p>
 </ul>
 
 
-<h1>&ldquo;convention over configuration&rdquo;</h1>
+<h1>&ldquo;Convention over Configuration&rdquo;</h1>
 
 <p>I think this philosophy is quite smart.
 Naming things is very hard, and a clean
