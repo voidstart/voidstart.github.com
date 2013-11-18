@@ -9,19 +9,19 @@ categories:
 Progress
 =
 - Object-Relational Mapping (ORM,Active Record)
-- Ruby Syntax (array,hash,block,exception)
+- Ruby Syntax (array,hash,block,exception,class,module,YAML)
 - page 70/476
 
 "First class function"
 =
 
-Block of codes can be passed to functions as values.
+Block of codes can be passed to functions as *values*.
 This is a powerful feature of the Ruby language.
 The "yield" call is interesting.  For-loops can be
 much different and this solves a lot of abstraction
 issue with things like the "visitor pattern".
 
-Active Records solves another issue with repetative 
+_Active Records_ solves another issue with repetative 
 duplication logic with class objects and database
 tables. They are very simular things in a way, but
 are much different to access. Active Records is a
