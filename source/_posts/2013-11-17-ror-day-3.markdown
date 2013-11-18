@@ -17,7 +17,7 @@ Progress
 
 Block of codes can be passed to functions as values.
 This is a powerful feature of the Ruby language.
-The "yeild" call is interesting.  For-loops can be
+The "yield" call is interesting.  For-loops can be
 much different and this solves a lot of abstraction
 issue with things like the "visitor pattern".
 
