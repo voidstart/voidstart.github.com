@@ -8,7 +8,7 @@ categories:
 
 Progress
 =
-- More ruby syntax (require,||, bang method, prediate method)
+- More ruby syntax (require,||, bang method, predicate method)
 - Depot app (pencil and paper design, db migrate/seed, sass, validation)
 - page 100/476
 
@@ -22,5 +22,3 @@ Common tasks like add a controller, add a table, a field, where to put styleshee
 where to put validation, where to put tests... All have a "conventional" answer.
 
 Developers' needs are addressed to be easy to get started. Brilliant.
-
-
