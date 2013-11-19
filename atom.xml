@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-18T22:43:51+08:00</updated>
+  <updated>2013-11-19T20:55:42+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 5]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/19/ror-day-5/"/>
+    <updated>2013-11-19T20:43:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/19/ror-day-5</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>css,scss</li>
+<li>layout (sidebar,banner)</li>
+<li>functional tests</li>
+<li>page 122/476</li>
+</ul>
+
+
+<h1>&ldquo;Functional Tests&rdquo;</h1>
+
+<p>Running tests is like have some robot always
+watching your back, which is nice.</p>
+
+<p>The tests written for this demo project follow
+such a pattern: add a feature first, then write
+a test to ensure <em>some</em> of its behavior.</p>
+
+<p>So far it&rsquo;s hard to imagine the way of writing
+tests first, because what to test is yet to be
+known.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 4]]></title>
