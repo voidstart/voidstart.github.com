@@ -1,0 +1,26 @@
+---
+layout: post
+title: "RoR Day 5"
+date: 2013-11-19 20:43
+comments: true
+categories: 
+---
+Progress
+=
+- css,scss
+- layout (sidebar,banner)
+- functional tests
+- page 122/476
+
+"Functional Tests"
+=
+Running tests is like have some robot always
+watching your back, which is nice.
+
+The tests written for this demo project follow
+such a pattern: add a feature first, then write
+a test to ensure _some_ of its behavior.
+
+So far it's hard to imagine the way of writing
+tests first, because what to test is yet to be
+known.
