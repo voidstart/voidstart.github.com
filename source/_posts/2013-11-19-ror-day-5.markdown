@@ -10,7 +10,7 @@ Progress
 - css,scss
 - layout (sidebar,banner)
 - functional tests
-- page 122/476
+- page 124/476
 
 "Functional Tests"
 =
