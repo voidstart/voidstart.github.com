@@ -1,0 +1,22 @@
+---
+layout: post
+title: "RoR Day 6"
+date: 2013-11-20 14:36
+comments: true
+categories: 
+---
+Progress
+=
+- Custom Db Migration
+- Custom Notice (Flash)
+- Handle Invalid request by redirection
+- Logger
+- Page 145/476
+
+"State of Request"
+=
+Between requests, special care should be done to
+maintain state. The _flash_ data structure is used,
+so far most helpful in error notices.
+
+
