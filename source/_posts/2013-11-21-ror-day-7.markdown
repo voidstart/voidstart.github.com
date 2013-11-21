@@ -1,0 +1,26 @@
+---
+layout: post
+title: "RoR Day 7"
+date: 2013-11-21 20:33
+comments: true
+categories: 
+---
+
+Progress
+=
+- Partial templates
+- Ajax
+- Page 163/476
+
+"Templates as methods"
+=
+It's a great idea, actually, more of a general idea.
+
+Templates for web code are like methods that can be
+reused, parameterized. This analogy can be extended
+to many things, and I believe great things will come
+out of it. Think of pictures as methods, videos as
+methods. Designs, colors, quotes, that can have _API_,
+can be auto-suggusted or auto-completed, with detailed
+parameters. This can be fun.
+
