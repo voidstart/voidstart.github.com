@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-21T23:09:41+08:00</updated>
+  <updated>2013-11-22T20:07:33+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 8]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/22/ror-day-8/"/>
+    <updated>2013-11-22T19:32:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/22/ror-day-8</id>
+    <content type="html"><![CDATA[<h1>Progess</h1>
+
+<ul>
+<li>CoffeeScript</li>
+<li>Page 190/476</li>
+</ul>
+
+
+<h1>&ldquo;CoffeeScript&rdquo;</h1>
+
+<p>It&rsquo;s amazing that people invent one language just to write
+another language easier.</p>
+
+<p>The simplest form is Macro languages, those just do short hand
+substitutions. Advanced forms would invent its own simpler,
+idomatic syntax, to map one structure to another. The advantages
+they provide are usually: expressiveness (say more with less),
+intuitive (fits people&rsquo;s mind).</p>
+
+<p>Thinking about RoR in general and anything that tries to make
+people express more easily, the general idea is the same. You
+capture people&rsquo;s intuition, reduce repititions.</p>
+
+<p>I think of RoR as providing a form, just like one of those you fill
+at the immigration office. So that you don&rsquo;t have to do your own
+composition writing. This is convenient, and enforces a certain level
+of quality. The downside is it cuts into your imagination space.</p>
+
+<p>The good thing is you get started and have an idea, then starting to
+erase the form and draw your own image. :D</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 7]]></title>
