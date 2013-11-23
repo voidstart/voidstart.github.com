@@ -1,0 +1,27 @@
+---
+layout: post
+title: "RoR Day 9"
+date: 2013-11-23 21:59
+comments: true
+categories: 
+---
+
+Progress
+=
+- Email
+- Login
+- Page 207/476
+
+"Ultimate communication: Email"
+=
+
+I remember somebody said that having emails is the final
+stage of advancement of any program. The example being used
+was Emacs. Any application complicated enough should at one
+time thinking about supporting emails.
+
+It's amazing that such an old technology still lives at the
+edge of our modern lives. Nothing much about emails have
+changed over time. Emails are truly classic, and truly a
+basic component of our lives, like beds and wheels. Something
+never dies.
