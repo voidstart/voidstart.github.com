@@ -1,0 +1,29 @@
+---
+layout: post
+title: "RoR Day 10"
+date: 2013-11-24 21:12
+comments: true
+categories: 
+---
+
+Progress
+=
+- I18N
+- 244/476
+
+"Internationalization"
+=
+Essentially, every string is a fixed value that is
+like enum. However, since texts are so easy to just
+type out, people tend to just write them out, rather
+than defining any enumeration.
+
+Eventually the solution is to use something like tagging,
+which is some function to return a translated version
+based on locale.
+
+This is kind of a unique case where a certain special
+string literal markings can be useful. In C++ world, there's
+a proposal for 2014 which adds physics units to the string
+literal, enabling interpretations of physics units at the
+compiler level. That could be a great inspiration for i18n.
