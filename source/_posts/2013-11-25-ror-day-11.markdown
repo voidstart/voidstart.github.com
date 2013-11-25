@@ -1,0 +1,33 @@
+---
+layout: post
+title: "RoR Day 11"
+date: 2013-11-25 20:59
+comments: true
+categories: 
+---
+
+Progress
+=
+- Deployment
+- 264/476
+
+"Production qualified"
+=
+There seems to be always a need to make the testing
+environment as simple as possible, for the benefit of quick looping
+in experimentation. For real world, however, the priority has changed.
+The performance becomes first order, and changes are slow.
+
+The root reason being stability and speed. For any product, it is important to maintain the balance
+between delivering a stable, dependenable expectations, and the need
+for new functions.
+
+Take it further, it's the difference of existing function and wanted function that matter. If the
+need for new/better function outweighs the stability of existing ones, things need to go faster.
+
+In Linux, there's the rule of never break the user's code, respect total backwards compatibility.
+Only after years of obsoletion a supported feature could be deleted. Even so, such old products
+could still go the history museums.
+
+In today's fast-food world, it becomes rarity to be something that lasts decades. Standing the
+test of time is such a beautiful property in modern times. 
