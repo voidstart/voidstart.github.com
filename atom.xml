@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-24T21:20:41+08:00</updated>
+  <updated>2013-11-25T21:17:00+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 11]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/25/ror-day-11/"/>
+    <updated>2013-11-25T20:59:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/25/ror-day-11</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>Deployment</li>
+<li>264/476</li>
+</ul>
+
+
+<h1>&ldquo;Production qualified&rdquo;</h1>
+
+<p>There seems to be always a need to make the testing
+environment as simple as possible, for the benefit of quick looping
+in experimentation. For real world, however, the priority has changed.
+The performance becomes first order, and changes are slow.</p>
+
+<p>The root reason being stability and speed. For any product, it is important to maintain the balance
+between delivering a stable, dependenable expectations, and the need
+for new functions.</p>
+
+<p>Take it further, it&rsquo;s the difference of existing function and wanted function that matter. If the
+need for new/better function outweighs the stability of existing ones, things need to go faster.</p>
+
+<p>In Linux, there&rsquo;s the rule of never break the user&rsquo;s code, respect total backwards compatibility.
+Only after years of obsoletion a supported feature could be deleted. Even so, such old products
+could still go the history museums.</p>
+
+<p>In today&rsquo;s fast-food world, it becomes rarity to be something that lasts decades. Standing the
+test of time is such a beautiful property in modern times.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 10]]></title>
