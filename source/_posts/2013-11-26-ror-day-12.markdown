@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: "RoR Day 12"
 date: 2013-11-26 20:46
