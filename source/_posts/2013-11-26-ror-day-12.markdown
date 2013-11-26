@@ -1,0 +1,44 @@
+--
+layout: post
+title: "RoR Day 12"
+date: 2013-11-26 20:46
+comments: true
+categories: 
+---
+
+Progress
+=
+
+- Review what I have learn (Retrospective)
+- 268/476
+
+"Retrospective"
+=
+In retrospect, there are several things that are quite fresh to me.
+
+- MVC thinking
+- Template transformation ( erb -> html, js ... )
+- Ruby block
+- Pervasive conventions over configuration
+- Request and State
+
+MVC makes the parts of the app easily separated, easy to find what
+goes where and reason about. 
+
+Transformations from embedded ruby 
+to other sources are the bridge to generate web pages according to
+states, including db and user interactions.
+
+Ruby block shows first order functions, and provides a new way of 
+thinking about code and behavior. We can pass behaviors around and attach
+to another behavior or data.
+
+Conventions make a lot things easier. A lot of hard questions are not
+about figuring out how to do, but just choose something, like naming
+things and putting things somewhere. Conventions make those no brainers.
+
+Request and state is particular for web development. The server and client
+communicates by requests one at a time. To pass on the conversation across 
+requests, state must be maintained.
+
+
