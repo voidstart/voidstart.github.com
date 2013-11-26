@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-26T22:20:18+08:00</updated>
+  <updated>2013-11-26T22:21:54+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -14,19 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Ror Day 12]]></title>
+    <title type="html"><![CDATA[RoR Day 12]]></title>
     <link href="http://voidstart.github.io/blog/2013/11/26/ror-day-12/"/>
-    <updated>2013-11-26T00:00:00+08:00</updated>
+    <updated>2013-11-26T20:46:00+08:00</updated>
     <id>http://voidstart.github.io/blog/2013/11/26/ror-day-12</id>
-    <content type="html"><![CDATA[<p>&mdash;
-layout: post
-title: &ldquo;RoR Day 12&rdquo;
-date: 2013-11-26 20:46
-comments: true</p>
-
-<h2>categories: </h2>
-
-<h1>Progress</h1>
+    <content type="html"><![CDATA[<h1>Progress</h1>
 
 <ul>
 <li>Review what I have learn (Retrospective)</li>
