@@ -27,6 +27,7 @@ We ends up with: use ruby to do js, use js to do html, use html to do page.
 Just an amazing stack.
 
 Css is the language to do styling via several things:
+
 - Identify some elements in the DOM (via class, id)
 - Describe the style of that element (font,color,size,margin..)
 
