@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-26T22:21:54+08:00</updated>
+  <updated>2013-11-27T23:16:54+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 13]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/27/ror-day-13/"/>
+    <updated>2013-11-27T23:04:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/27/ror-day-13</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>Continue Review</li>
+<li>268/476</li>
+</ul>
+
+
+<h1>&ldquo;Ajax, Javascript, Css&rdquo;</h1>
+
+<p>This is not something much about Ruby or Rails, just web dev
+in general.</p>
+
+<p>Ajax allows interaction without page reload. A request still happens
+in the background, but only partical page is obtained. DOM tree largely
+remains the same, but part of the tree got replaced.</p>
+
+<p>Javascript is the language used to manipulate the DOM tree, and such
+code sources need to be adaptive to content, too. Thus, we could again
+use Ruby to generate JS code from templates, just like html pages.
+We ends up with: use ruby to do js, use js to do html, use html to do page.
+Just an amazing stack.</p>
+
+<p>Css is the language to do styling via several things:
+&ndash; Identify some elements in the DOM (via class, id)
+&ndash; Describe the style of that element (font,color,size,margin..)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 12]]></title>

@@ -99,6 +99,82 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/11/27/ror-day-13/">RoR Day 13</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-27T23:04:00+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Progress</h1>
+
+<ul>
+<li>Continue Review</li>
+<li>268/476</li>
+</ul>
+
+
+<h1>&ldquo;Ajax, Javascript, Css&rdquo;</h1>
+
+<p>This is not something much about Ruby or Rails, just web dev
+in general.</p>
+
+<p>Ajax allows interaction without page reload. A request still happens
+in the background, but only partical page is obtained. DOM tree largely
+remains the same, but part of the tree got replaced.</p>
+
+<p>Javascript is the language used to manipulate the DOM tree, and such
+code sources need to be adaptive to content, too. Thus, we could again
+use Ruby to generate JS code from templates, just like html pages.
+We ends up with: use ruby to do js, use js to do html, use html to do page.
+Just an amazing stack.</p>
+
+<p>Css is the language to do styling via several things:
+&ndash; Identify some elements in the DOM (via class, id)
+&ndash; Describe the style of that element (font,color,size,margin..)</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/11/26/ror-day-12/">RoR Day 12</a></h1>
     
     
@@ -762,78 +838,6 @@ where to put validation, where to put tests&hellip; All have a &ldquo;convention
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/17/ror-day-3/">RoR Day 3</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-17T23:43:00+08:00" pubdate data-updated="true">Nov 17<span>th</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Progress</h1>
-
-<ul>
-<li>Object-Relational Mapping (ORM,Active Record)</li>
-<li>Ruby Syntax (array,hash,block,exception,class,module,YAML)</li>
-<li>page 70/476</li>
-</ul>
-
-
-<h1>&ldquo;First class function&rdquo;</h1>
-
-<p>Block of codes can be passed to functions as <em>values</em>.
-This is a powerful feature of the Ruby language.
-The &ldquo;yield&rdquo; call is interesting.  For-loops can be
-much different and this solves a lot of abstraction
-issue with things like the &ldquo;visitor pattern&rdquo;.</p>
-
-<p><em>Active Records</em> solves another issue with repetative
-duplication logic with class objects and database
-tables. They are very simular things in a way, but
-are much different to access. Active Records is a
-device for adapting the differences of access.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -857,6 +861,10 @@ device for adapting the differences of access.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/11/27/ror-day-13/">RoR Day 13</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/11/26/ror-day-12/">RoR Day 12</a>
         </li>
       
@@ -870,10 +878,6 @@ device for adapting the differences of access.</p>
       
         <li>
           <a href="/blog/2013/11/23/ror-day-9/">RoR Day 9</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/11/22/ror-day-8/">RoR Day 8</a>
         </li>
       
     </ul>
