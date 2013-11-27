@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-27T23:16:54+08:00</updated>
+  <updated>2013-11-27T23:19:49+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -41,9 +41,13 @@ use Ruby to generate JS code from templates, just like html pages.
 We ends up with: use ruby to do js, use js to do html, use html to do page.
 Just an amazing stack.</p>
 
-<p>Css is the language to do styling via several things:
-&ndash; Identify some elements in the DOM (via class, id)
-&ndash; Describe the style of that element (font,color,size,margin..)</p>
+<p>Css is the language to do styling via several things:</p>
+
+<ul>
+<li>Identify some elements in the DOM (via class, id)</li>
+<li>Describe the style of that element (font,color,size,margin..)</li>
+</ul>
+
 ]]></content>
   </entry>
   
