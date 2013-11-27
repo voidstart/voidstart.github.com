@@ -1,0 +1,32 @@
+---
+layout: post
+title: "RoR Day 13"
+date: 2013-11-27 23:04
+comments: true
+categories: 
+---
+
+Progress
+=
+- Continue Review
+- 268/476
+
+"Ajax, Javascript, Css"
+=
+This is not something much about Ruby or Rails, just web dev
+in general.
+
+Ajax allows interaction without page reload. A request still happens
+in the background, but only partical page is obtained. DOM tree largely
+remains the same, but part of the tree got replaced.
+
+Javascript is the language used to manipulate the DOM tree, and such
+code sources need to be adaptive to content, too. Thus, we could again
+use Ruby to generate JS code from templates, just like html pages.
+We ends up with: use ruby to do js, use js to do html, use html to do page.
+Just an amazing stack.
+
+Css is the language to do styling via several things:
+- Identify some elements in the DOM (via class, id)
+- Describe the style of that element (font,color,size,margin..)
+
