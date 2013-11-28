@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-27T23:19:49+08:00</updated>
+  <updated>2013-11-28T22:16:24+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 14]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/28/ror-day-14/"/>
+    <updated>2013-11-28T21:58:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/28/ror-day-14</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>Practice the Playtime tasks</li>
+<li>286/476</li>
+</ul>
+
+
+<h1>&ldquo;Playtime&rdquo;</h1>
+
+<p>Following the book to write the app is straightforward, since everything
+is detailed explained.</p>
+
+<p>Playtime is the section without the answers explained, but only the questions given.
+I had struggled with some of the questions for quite some time.</p>
+
+<p>So far I have done all the playtime by myself and many of the errors I made are
+caused by misunderstanding and carelessness. Through Googling and re-examining
+the source codes, eventually the issue will settle.</p>
+
+<p>The hard part about development is sometimes the error message just does not make
+sense, you have to apply intuition, play and compare and ask good questions. This
+is ultimately about the gap between computer and human, imagine if computer can
+figure out all the underlying issues of why something does not work and print
+the exact issue right in front of you. Everything is just recipe, even the error
+printed. Perhaps I should look at machine learning for some inspirations.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 13]]></title>
