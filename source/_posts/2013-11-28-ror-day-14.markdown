@@ -28,5 +28,8 @@ The hard part about development is sometimes the error message just does not mak
 sense, you have to apply intuition, play and compare and ask good questions. This
 is ultimately about the gap between computer and human, imagine if computer can
 figure out all the underlying issues of why something does not work and print
-the exact issue right in front of you. Everything is just recipe, even the error
-printed. Perhaps I should look at machine learning for some inspirations.
+the exact issue right in front of you. Everything is just like cooking recipe, even the error
+printed, designed by human. The logic paths are thought first by a human, then coded
+into recipes for the execution loop.
+
+Perhaps I should look at machine learning courses for some inspirations.
