@@ -1,0 +1,34 @@
+---
+layout: post
+title: "RoR Day 15"
+date: 2013-11-29 22:03
+comments: true
+categories: 
+---
+
+Progress
+=
+- Review
+- Fix tests
+- Setup a production environment
+
+"Production"
+=
+Prototype and production are different. The gap may seem complex
+but it really shouldn't be. The stuff makes a good prototype should
+have good benefits on the production-type also. But then comes the
+question of why the gap.
+
+I've talked about [Production Qualified](http://voidstart.com/blog/2013/11/25/ror-day-11/) before,
+about the differences in existence. Now I wonder why one system cannot take the upsides of both.
+
+There really is no reason that a prototype shouldn't be stable and performant. The real problem
+is simplicity. Production systems are complex, especially for large scale. It takes extra logic
+to optimize/enhance for different situations, such as millions of concurrent users or bad 3G network.
+Security risks are high, storage loads are high and data is much more important that can never be
+lost. Logging is going to handle both the load and safisticated enough for deep analysis, even
+for graphing and data mining purposes.
+
+Why cannot all these be some kind of plugins that could be easily enabled by installation with
+a package manager. If the structure is well thought of to enable such reliable extension, there
+really should be no reason of why it can't be done.
