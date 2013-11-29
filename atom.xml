@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-28T22:19:52+08:00</updated>
+  <updated>2013-11-29T22:41:44+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 15]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/29/ror-day-15/"/>
+    <updated>2013-11-29T22:03:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/29/ror-day-15</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>Review</li>
+<li>Fix tests</li>
+<li>Setup a production environment</li>
+</ul>
+
+
+<h1>&ldquo;Production&rdquo;</h1>
+
+<p>Prototype and production are different. The gap may seem complex
+but it really shouldn&rsquo;t be. The stuff makes a good prototype should
+have good benefits on the production-type also. But then comes the
+question of why the gap.</p>
+
+<p>I&rsquo;ve talked about <a href="http://voidstart.com/blog/2013/11/25/ror-day-11/">Production Qualified</a> before,
+about the differences in existence. Now I wonder why one system cannot take the upsides of both.</p>
+
+<p>There really is no reason that a prototype shouldn&rsquo;t be stable and performant. The real problem
+is simplicity. Production systems are complex, especially for large scale. It takes extra logic
+to optimize/enhance for different situations, such as millions of concurrent users or bad 3G network.
+Security risks are high, storage loads are high and data is much more important that can never be
+lost. Logging is going to handle both the load and safisticated enough for deep analysis, even
+for graphing and data mining purposes.</p>
+
+<p>Why cannot all these be some kind of plugins that could be easily enabled by installation with
+a package manager. If the structure is well thought of to enable such reliable extension, there
+really should be no reason of why it can&rsquo;t be done.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 14]]></title>

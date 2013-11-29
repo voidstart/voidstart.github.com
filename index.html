@@ -99,6 +99,85 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/11/29/ror-day-15/">RoR Day 15</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-29T22:03:00+08:00" pubdate data-updated="true">Nov 29<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Progress</h1>
+
+<ul>
+<li>Review</li>
+<li>Fix tests</li>
+<li>Setup a production environment</li>
+</ul>
+
+
+<h1>&ldquo;Production&rdquo;</h1>
+
+<p>Prototype and production are different. The gap may seem complex
+but it really shouldn&rsquo;t be. The stuff makes a good prototype should
+have good benefits on the production-type also. But then comes the
+question of why the gap.</p>
+
+<p>I&rsquo;ve talked about <a href="http://voidstart.com/blog/2013/11/25/ror-day-11/">Production Qualified</a> before,
+about the differences in existence. Now I wonder why one system cannot take the upsides of both.</p>
+
+<p>There really is no reason that a prototype shouldn&rsquo;t be stable and performant. The real problem
+is simplicity. Production systems are complex, especially for large scale. It takes extra logic
+to optimize/enhance for different situations, such as millions of concurrent users or bad 3G network.
+Security risks are high, storage loads are high and data is much more important that can never be
+lost. Logging is going to handle both the load and safisticated enough for deep analysis, even
+for graphing and data mining purposes.</p>
+
+<p>Why cannot all these be some kind of plugins that could be easily enabled by installation with
+a package manager. If the structure is well thought of to enable such reliable extension, there
+really should be no reason of why it can&rsquo;t be done.</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/11/28/ror-day-14/">RoR Day 14</a></h1>
     
     
@@ -780,78 +859,6 @@ so far most helpful in error notices.</p>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/19/ror-day-5/">RoR Day 5</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-19T20:43:00+08:00" pubdate data-updated="true">Nov 19<span>th</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Progress</h1>
-
-<ul>
-<li>css,scss</li>
-<li>layout (sidebar,banner)</li>
-<li>functional tests</li>
-<li>page 124/476</li>
-</ul>
-
-
-<h1>&ldquo;Functional Tests&rdquo;</h1>
-
-<p>Running tests is like have some robot always
-watching your back, which is nice.</p>
-
-<p>The tests written for this demo project follow
-such a pattern: add a feature first, then write
-a test to ensure <em>some</em> of its behavior.</p>
-
-<p>So far it&rsquo;s hard to imagine the way of writing
-tests first, because what to test is yet to be
-known.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -875,6 +882,10 @@ known.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/11/29/ror-day-15/">RoR Day 15</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/11/28/ror-day-14/">RoR Day 14</a>
         </li>
       
@@ -888,10 +899,6 @@ known.</p>
       
         <li>
           <a href="/blog/2013/11/25/ror-day-11/">RoR Day 11</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/11/24/ror-day-10/">RoR Day 10</a>
         </li>
       
     </ul>
