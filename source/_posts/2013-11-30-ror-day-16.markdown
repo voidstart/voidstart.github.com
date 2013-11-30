@@ -19,17 +19,19 @@ Progress
 In a sense, the database table/row/column has much resonance with
 the OO's class/object/attribute. The dimensions are very similiar.
 
-This is repitition to the humans, to the machines and the different
+This is repitition to the humans.However, to the machines and the different
 systems, it's more like saying more or less the same thing in two
 langauges. Translation is in order. But since this is defined so
-formally in computer languages, can't that be easily translated?
+formally in computer languages, can't that be easily translated by
+machines themselves?
 
 Well, Active Record is all about the automatic translations. There
-are rules about names translation, and operations translations.
+are rules about names translation, and operations translations, defined
+by humans. Once the rules are in place, the human repetitions can stop.
 Naming things is hard, except when you can fixiate on some convention
-predefined. Everybody just have to agree on the names.
+predefined. Everybody just have to agree on the conventions.
 
-We are dealing with very intricate stuff in a small kingdom of computer
+We are like dealing with very intricate stuff in a small kingdom of computer
 models and objects and databases and what have you. We can't keep
 debating about the names of common things like streets and roads. That
 has to be fixed to let us communicate effectively, so we can navigate
