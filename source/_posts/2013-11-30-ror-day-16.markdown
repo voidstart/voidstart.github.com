@@ -1,0 +1,40 @@
+---
+layout: post
+title: "RoR Day 16"
+date: 2013-11-30 23:28
+comments: true
+categories: 
+---
+
+Progress
+=
+- Finish first review process
+- Dig deeper into Active Records
+- Page 294/476
+
+
+"DRY: Don't Repeat Yourself"
+=
+
+In a sense, the database table/row/column has much resonance with
+the OO's class/object/attribute. The dimensions are very similiar.
+
+This is repitition to the humans, to the machines and the different
+systems, it's more like saying more or less the same thing in two
+langauges. Translation is in order. But since this is defined so
+formally in computer languages, can't that be easily translated?
+
+Well, Active Record is all about the automatic translations. There
+are rules about names translation, and operations translations.
+Naming things is hard, except when you can fixiate on some convention
+predefined. Everybody just have to agree on the names.
+
+We are dealing with very intricate stuff in a small kingdom of computer
+models and objects and databases and what have you. We can't keep
+debating about the names of common things like streets and roads. That
+has to be fixed to let us communicate effectively, so we can navigate
+without losing the way.
+
+Rails is such fixation. We express one thing, Rails knows the other.
+There are exceptions when we want to keep things _irregular_, Rails allows
+that can let us put our exceptions in the system.
