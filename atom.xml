@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-11-29T22:41:44+08:00</updated>
+  <updated>2013-11-30T23:37:59+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 16]]></title>
+    <link href="http://voidstart.github.io/blog/2013/11/30/ror-day-16/"/>
+    <updated>2013-11-30T23:28:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/11/30/ror-day-16</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>Finish first review process</li>
+<li>Dig deeper into Active Records</li>
+<li>Page 294/476</li>
+</ul>
+
+
+<h1>&ldquo;DRY: Don&rsquo;t Repeat Yourself&rdquo;</h1>
+
+<p>In a sense, the database table/row/column has much resonance with
+the OO&rsquo;s class/object/attribute. The dimensions are very similiar.</p>
+
+<p>This is repitition to the humans, to the machines and the different
+systems, it&rsquo;s more like saying more or less the same thing in two
+langauges. Translation is in order. But since this is defined so
+formally in computer languages, can&rsquo;t that be easily translated?</p>
+
+<p>Well, Active Record is all about the automatic translations. There
+are rules about names translation, and operations translations.
+Naming things is hard, except when you can fixiate on some convention
+predefined. Everybody just have to agree on the names.</p>
+
+<p>We are dealing with very intricate stuff in a small kingdom of computer
+models and objects and databases and what have you. We can&rsquo;t keep
+debating about the names of common things like streets and roads. That
+has to be fixed to let us communicate effectively, so we can navigate
+without losing the way.</p>
+
+<p>Rails is such fixation. We express one thing, Rails knows the other.
+There are exceptions when we want to keep things <em>irregular</em>, Rails allows
+that can let us put our exceptions in the system.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 15]]></title>

@@ -99,6 +99,89 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/11/30/ror-day-16/">RoR Day 16</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-30T23:28:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Progress</h1>
+
+<ul>
+<li>Finish first review process</li>
+<li>Dig deeper into Active Records</li>
+<li>Page 294/476</li>
+</ul>
+
+
+<h1>&ldquo;DRY: Don&rsquo;t Repeat Yourself&rdquo;</h1>
+
+<p>In a sense, the database table/row/column has much resonance with
+the OO&rsquo;s class/object/attribute. The dimensions are very similiar.</p>
+
+<p>This is repitition to the humans, to the machines and the different
+systems, it&rsquo;s more like saying more or less the same thing in two
+langauges. Translation is in order. But since this is defined so
+formally in computer languages, can&rsquo;t that be easily translated?</p>
+
+<p>Well, Active Record is all about the automatic translations. There
+are rules about names translation, and operations translations.
+Naming things is hard, except when you can fixiate on some convention
+predefined. Everybody just have to agree on the names.</p>
+
+<p>We are dealing with very intricate stuff in a small kingdom of computer
+models and objects and databases and what have you. We can&rsquo;t keep
+debating about the names of common things like streets and roads. That
+has to be fixed to let us communicate effectively, so we can navigate
+without losing the way.</p>
+
+<p>Rails is such fixation. We express one thing, Rails knows the other.
+There are exceptions when we want to keep things <em>irregular</em>, Rails allows
+that can let us put our exceptions in the system.</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/11/29/ror-day-15/">RoR Day 15</a></h1>
     
     
@@ -793,72 +876,6 @@ parameters. This can be fun.</p>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/20/ror-day-6/">RoR Day 6</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-20T14:36:00+08:00" pubdate data-updated="true">Nov 20<span>th</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Progress</h1>
-
-<ul>
-<li>Custom Db Migration</li>
-<li>Custom Notice (Flash)</li>
-<li>Handle Invalid request by redirection</li>
-<li>Logger</li>
-<li>Page 145/476</li>
-</ul>
-
-
-<h1>&ldquo;State of Request&rdquo;</h1>
-
-<p>Between requests, special care should be done to
-maintain state. The <em>flash</em> data structure is used,
-so far most helpful in error notices.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -882,6 +899,10 @@ so far most helpful in error notices.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/11/30/ror-day-16/">RoR Day 16</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/11/29/ror-day-15/">RoR Day 15</a>
         </li>
       
@@ -895,10 +916,6 @@ so far most helpful in error notices.</p>
       
         <li>
           <a href="/blog/2013/11/26/ror-day-12/">RoR Day 12</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/11/25/ror-day-11/">RoR Day 11</a>
         </li>
       
     </ul>
