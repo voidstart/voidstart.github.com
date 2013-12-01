@@ -1,0 +1,43 @@
+---
+layout: post
+title: "RoR Day 17"
+date: 2013-12-01 22:37
+comments: true
+categories: 
+---
+
+Progress
+=
+- Finish review of the first half of the book
+- Dig more into Active Records 
+- Dig deeper into Routes
+- Page 339/476 (71.2%)
+
+"Semantic naming"
+=
+Normally in languages, names are just symbols, identifiers, nothing much than
+some random letters.
+
+Here we have Rails, names have meanings. `find()`, `find_by_xxx()`, `find_all_by_xxx()`,
+esencially it's embedded APIs in namings. I am not sure this is like meta-programming such
+as C++ macros, it's more powerful and natural.  
+I think it at least has two advantages :
+
+- Clean syntax. Less clutter like brackets, easy to read.
+- Natrual feeling. Reads more like English.
+
+A good idea for language design.
+
+"SQL injection"
+=
+A rather _old_ topic, yet still very relevent.
+
+On the surface, this is about escaping syntax tricks. What's more fundamental is, the question
+of what is data and what is code. Code and Data are represented by the same 1 and 0's and transferred
+all the same. The point of interpretation, or execution, is critical for avoiding unintended (or
+ill-intended) treating data as code. This is the root of all priviledge stealing in systems by design.
+
+Of course hackers can still hack accounts and passwords by brute-force guessing or social means. But treating
+data as code is _the_ technical vulnerability to fight in all sorts of systems, be it SQL, shell codes, overflows etc. 
+The idea is to let the machine _run MY code_.
+
