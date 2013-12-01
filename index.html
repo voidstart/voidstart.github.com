@@ -99,6 +99,96 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/12/01/ror-day-17/">RoR Day 17</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-01T22:37:00+08:00" pubdate data-updated="true">Dec 1<span>st</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Progress</h1>
+
+<ul>
+<li>Finish review of the first half of the book</li>
+<li>Dig more into Active Records</li>
+<li>Dig deeper into Routes</li>
+<li>Page 339/476 (71.2%)</li>
+</ul>
+
+
+<h1>&ldquo;Semantic naming&rdquo;</h1>
+
+<p>Normally in languages, names are just symbols, identifiers, nothing much than
+some random letters.</p>
+
+<p>Here we have Rails, names have meanings. <code>find()</code>, <code>find_by_xxx()</code>, <code>find_all_by_xxx()</code>,
+esencially it&rsquo;s embedded APIs in namings. I am not sure this is like meta-programming such
+as C++ macros, it&rsquo;s more powerful and natural.<br/>
+I think it at least has two advantages :</p>
+
+<ul>
+<li>Clean syntax. Less clutter like brackets, easy to read.</li>
+<li>Natrual feeling. Reads more like English.</li>
+</ul>
+
+
+<p>A good idea for language design.</p>
+
+<h1>&ldquo;SQL injection&rdquo;</h1>
+
+<p>A rather <em>old</em> topic, yet still very relevent.</p>
+
+<p>On the surface, this is about escaping syntax tricks. What&rsquo;s more fundamental is, the question
+of what is data and what is code. Code and Data are represented by the same 1 and 0&rsquo;s and transferred
+all the same. The point of interpretation, or execution, is critical for avoiding unintended (or
+ill-intended) treating data as code. This is the root of all priviledge stealing in systems by design.</p>
+
+<p>Of course hackers can still hack accounts and passwords by brute-force guessing or social means. But treating
+data as code is <em>the</em> technical vulnerability to fight in all sorts of systems, be it SQL, shell codes, overflows etc.
+The idea is to let the machine <em>run MY code</em>.</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/11/30/ror-day-16/">RoR Day 16</a></h1>
     
     
@@ -808,76 +898,6 @@ erase the form and draw your own image. :D</p>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/21/ror-day-7/">RoR Day 7</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-21T20:33:00+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Progress</h1>
-
-<ul>
-<li>Partial templates</li>
-<li>Ajax</li>
-<li>Page 163/476</li>
-</ul>
-
-
-<h1>&ldquo;Templates as methods&rdquo;</h1>
-
-<p>It&rsquo;s a great idea, actually, more of a general idea.</p>
-
-<p>Templates for web code are like methods that can be
-reused, parameterized. This analogy can be extended
-to many things, and I believe great things will come
-out of it. Think of pictures as methods, videos as
-methods. Designs, colors, quotes, that can have <em>API</em>,
-can be auto-suggusted or auto-completed, with detailed
-parameters. This can be fun.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -901,6 +921,10 @@ parameters. This can be fun.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/12/01/ror-day-17/">RoR Day 17</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/11/30/ror-day-16/">RoR Day 16</a>
         </li>
       
@@ -914,10 +938,6 @@ parameters. This can be fun.</p>
       
         <li>
           <a href="/blog/2013/11/27/ror-day-13/">RoR Day 13</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/11/26/ror-day-12/">RoR Day 12</a>
         </li>
       
     </ul>
