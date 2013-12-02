@@ -1,0 +1,49 @@
+---
+layout: post
+title: "RoR Day 18"
+date: 2013-12-02 17:43
+comments: true
+categories: 
+---
+
+Progress
+=
+- render(), Action View
+- Caching page,action,segment
+- Migration
+- Page 407/476 (85.5%)
+
+"Cache and State"
+=
+Cache is in pinciple just a faster copy of something else.
+Yet the simplicity of its surface does not warrant it's simple
+underneath. Caching is one of _the_ hard problems in many systems.
+
+When create cache, immediately worry about several things:
+capacity, synchronicity, invalidation. Worse, cache systems tend to
+_cascade_ from level to level. CPU's have severl levels of caching.
+
+Be fast, but definitely don't be wrong.
+Trade space for speed, without sacrificing correctness.
+
+Think of it as two worlds: the cached world, the _real_ world.
+In short: Use the cached world when it's a correct mirror, when
+it's not, mirror first. How does it become un-mirrored/out of sync?
+Either _real_ world updated, or the cached world breaks (dropped cache
+or non-existent).
+
+Thinking this way helps understanding the whole point of cache systems.
+
+"Partials"
+=
+Classic divide and conquer. Big worlds versus nested smaller worlds.
+
+What partials do are analogous to functions, just for views. _Context_ is what is passed into
+the smaller worlds. With the _context_, some actions are performed, to either
+produce a side-effect (like IO) or just prepare some data (returned value like string,
+objects)
+
+"Migration"
+=	
+It's like Git log, but version controling the database.
+ Keeping track of changes, that could be reverted. 
