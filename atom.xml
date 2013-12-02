@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-01T23:49:45+08:00</updated>
+  <updated>2013-12-02T18:59:28+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 18]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/02/ror-day-18/"/>
+    <updated>2013-12-02T17:43:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/02/ror-day-18</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>render(), Action View</li>
+<li>Caching page,action,segment</li>
+<li>Migration</li>
+<li>Page 407/476 (85.5%)</li>
+</ul>
+
+
+<h1>&ldquo;Cache and State&rdquo;</h1>
+
+<p>Cache is in pinciple just a faster copy of something else.
+Yet the simplicity of its surface does not warrant it&rsquo;s simple
+underneath. Caching is one of <em>the</em> hard problems in many systems.</p>
+
+<p>When create cache, immediately worry about several things:
+capacity, synchronicity, invalidation. Worse, cache systems tend to
+<em>cascade</em> from level to level. CPU&rsquo;s have severl levels of caching.</p>
+
+<p>Be fast, but definitely don&rsquo;t be wrong.
+Trade space for speed, without sacrificing correctness.</p>
+
+<p>Think of it as two worlds: the cached world, the <em>real</em> world.
+In short: Use the cached world when it&rsquo;s a correct mirror, when
+it&rsquo;s not, mirror first. How does it become un-mirrored/out of sync?
+Either <em>real</em> world updated, or the cached world breaks (dropped cache
+or non-existent).</p>
+
+<p>Thinking this way helps understanding the whole point of cache systems.</p>
+
+<h1>&ldquo;Partials&rdquo;</h1>
+
+<p>Classic divide and conquer. Big worlds versus nested smaller worlds.</p>
+
+<p>What partials do are analogous to functions, just for views. <em>Context</em> is what is passed into
+the smaller worlds. With the <em>context</em>, some actions are performed, to either
+produce a side-effect (like IO) or just prepare some data (returned value like string,
+objects)</p>
+
+<h1>&ldquo;Migration&rdquo;</h1>
+
+<p>It&rsquo;s like Git log, but version controling the database.
+ Keeping track of changes, that could be reverted.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 17]]></title>
