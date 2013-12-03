@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-03T18:56:27+08:00</updated>
+  <updated>2013-12-03T22:53:02+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -18,7 +18,20 @@
     <link href="http://voidstart.github.io/blog/2013/12/03/algorithm-design-manual-1/"/>
     <updated>2013-12-03T14:23:00+08:00</updated>
     <id>http://voidstart.github.io/blog/2013/12/03/algorithm-design-manual-1</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>Today I started review algorithms with <a href="http://amzn.com/0387948600?tag=a200-20">The Algorithm Design Manual</a>,
+recommended by <a href="http://codingforinterviews.com/books">Coding for interviews</a>.</p>
+
+<p>Not going to follow the step-by-step <em>&ldquo;enjoy the show&rdquo;</em> approach as <a href="http://pragprog.com/book/rails32/agile-web-development-with-rails-3-2">the agile Rails book</a>.
+I&rsquo;ll start with selected chapters/sections, and go to basics when in doubt.</p>
+
+<p>Currently I have several things for starter:</p>
+
+<ul>
+<li>Sorting</li>
+<li>Data structures of array/list/dict/queue</li>
+<li>Logorithms in Complexity Analysis</li>
+</ul>
+
 ]]></content>
   </entry>
   
