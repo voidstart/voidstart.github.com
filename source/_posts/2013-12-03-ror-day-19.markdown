@@ -1,0 +1,43 @@
+---
+layout: post
+title: "RoR Day 19"
+date: 2013-12-03 14:22
+comments: true
+categories: 
+---
+
+Progress
+=
+- Migrations ( Table, Index, Keys )
+- Standalone scripts ( Extension to Ruby, use of Active Support )
+- Gem, Gemfile, Bundle
+- Rack
+- Page 441/476 (92.6%)
+
+"Value of the Standalone"
+=
+It'll be wonderful if the table legs are not just for the table, but
+can be useful as something else. It'll be wonderful if those legs
+can be easily plug-out and put into another furniture as a useful component.
+Rails' active support, active records are very useful to help build other things.
+
+Standalone implies decoupling, compartmentalized, component-oriented.
+It usually means there's less to worry about, and only one interaction is to be concerned.
+The Rails Agile Book talks about _nonbrowser_ application, sugguesting no browser is involved
+in interaction. This makes several important components irrelevant (views, layouts), but the model
+is still to be interacted with.
+
+Scriptability is a sweet candy. It feels great to _tap_ into the _runtime_ of an app.
+`rails console` is like a console from games such as Quake and Counter-Strike.
+The console offers examination and modification at _runtime_. What's more, Rails offers
+web-service like API that are scriptable (JSON, XML interfaces), with similar human experience to local
+development. The book describes this similarity as *magic*.
+
+Dependencies versioning. What Gemfile does is both simple and powerful. What make it look better than
+other systems are:
+
+- Semantic versioning
+- Uniformity
+
+Rack is like yet another proxy/agent/adapter/.. (whatever people feel like to call such things), but for
+integration with web-servers.
