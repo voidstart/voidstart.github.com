@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-03T22:53:02+08:00</updated>
+  <updated>2013-12-04T22:29:17+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,64 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 20]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/04/ror-day-20/"/>
+    <updated>2013-12-04T21:40:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/04/ror-day-20</id>
+    <content type="html"><![CDATA[<h1>Progress</h1>
+
+<ul>
+<li>CreditCard Processor Gem (ActiveMerchant)</li>
+<li>Haml ( Yet another compressed syntax like Sass )</li>
+<li>More Plugins</li>
+<li>Page 457/476 (96.0%) &ndash;> End of All Readings</li>
+</ul>
+
+
+<h1>&ldquo;Syntax Compression&rdquo;</h1>
+
+<p>Replace a long &ldquo;class=..&rdquo; with &ldquo;.&rdquo; is clearly easier to type.
+Less verbose, but semantically the same. What&rsquo;s changed is the
+syntax, or could say <em>compressed</em>.</p>
+
+<p>The more often used stuff are compressed to shorter things like just
+a single char. It&rsquo;s mathematically obvious that encodings like this save
+more space/typing.</p>
+
+<p>Just like in algebra, complex variables are represented by just a Greek letter.
+It makes writing, reading, reasoning all the easier.</p>
+
+<p>It&rsquo;s for humans, the hands and the brains.</p>
+
+<h1>&ldquo;Funny names&rdquo;</h1>
+
+<p>Cucumber, Rspec, webrat.. It&rsquo;s definitely just 0s and 1s and nothing special.
+I think the <em>branding</em> is to create identity, to advertise, to make an impression,
+to humans, ultimately.</p>
+
+<p>Serves similar to <em>syntax compression</em>, it taps to how human brain works, related
+to cognative science, neuro science and phycology. One of the ways for gamblers to
+remember cards is to associate each card with a unique object like a flag, a tree etc.
+It&rsquo;s the common memorization techniques.</p>
+
+<p>We could go futher to create deeper associations. One example is, to remember several
+random objects, one imagine a room he&rsquo;s in and <em>put</em> the random things to certain
+locations in the room, as one <em>virtually</em> walking inside it. This creates connections
+to things with one&rsquo;s sense of space ( room places ) and time ( walking ).</p>
+
+<p>Maybe next time I&rsquo;ll name some Gem this way, when I write my own gems.</p>
+
+<h1>&ldquo;Voila&rdquo;</h1>
+
+<p>It&rsquo;s the end of first time reading this book. A lot is learned, a lot is made sense of,
+still a lot is missing the connection.</p>
+
+<p>Next up, I&rsquo;ll try to redo the app on my own, <em>without</em> following the steps, to refresh the
+memory and understanding.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Algorithm Design Manual - 1]]></title>
@@ -694,30 +752,6 @@ case, especially a website.</p>
 <p>This convention forces the way of thinking, and makes
 it easier to reason. In essense, MVC itself is a
 design decision.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 1]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/15/ror-day-1/"/>
-    <updated>2013-11-15T22:53:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/15/ror-day-1</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>setup rbenv,rails</li>
-<li>page 47/476</li>
-</ul>
-
-
-<h1>&ldquo;Convention over Configuration&rdquo;</h1>
-
-<p>I think this philosophy is quite smart.
-Naming things is very hard, and a clean
-convention solves lot of troubles.
-Plus the cost of communication is lower.
-Just by looking at a name we can know
-some extra information.</p>
 ]]></content>
   </entry>
   
