@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-04T22:29:17+08:00</updated>
+  <updated>2013-12-04T23:01:19+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Algorithm Design Manual - 2]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/04/algorithm-design-manual-2/"/>
+    <updated>2013-12-04T22:51:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/04/algorithm-design-manual-2</id>
+    <content type="html"><![CDATA[<p>I thought I&rsquo;d just start to warm up myself by writing some sorting
+algorithm.</p>
+
+<p>At first, I thought to first write some random generator for testing usage. Then
+I realized that&rsquo;s not the goal, to compare each algo with different types of inputs.
+I am just trying to implement <em>correct</em> sorting. The performance, code compactness,
+caching all are not my concerns. So the result is hardcoded <em>random</em> input, and I
+will print the whole array after each <em>pass</em> or interation (after swap etc), to
+observe the <em>sorting process</em> and final sorted array.</p>
+
+<p>I did from scatch the bubble, insertion, selection and merge sort. Turns out it&rsquo;s
+not easy to get right the first try even for such simple algorithm. My errors mostly
+on index off by 1, edge cases. Time spent mostly on thinking the <em>sorted</em> vs the <em>unsorted</em> part,
+and their transition. Direction, index, temps are most concerned.</p>
+
+<p>It&rsquo;s good excercise.</p>
+
+<p>I review some other things besides this:</p>
+
+<ul>
+<li>the spiral rule of c++ declaraions</li>
+<li>c++ quiz quesions (includes some c++ 11 stuff)</li>
+<li>stack and queues</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 20]]></title>
@@ -715,43 +748,6 @@ duplication logic with class objects and database
 tables. They are very simular things in a way, but
 are much different to access. Active Records is a
 device for adapting the differences of access.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 2]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/16/ror-day-2/"/>
-    <updated>2013-11-16T23:07:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/16/ror-day-2</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>play with &lt;% %> and &lt;%= %> syntax</li>
-<li>review MVC concept</li>
-<li>page 52/476</li>
-</ul>
-
-
-<p>(got only about 1 hour of free time today)</p>
-
-<h1>&ldquo;Separation of Concerns&rdquo;</h1>
-
-<p>Model, View, Controller is a good way for humans
-to understand computer codes, at least some kinds
-of them.</p>
-
-<p>The particular senario this methodology addresses
-is a stateful, interactive, perspective application.</p>
-
-<p>There are many kinds of codes. It&rsquo;s hard to model
-something like a device driver with MVC.</p>
-
-<p>&ldquo;GUI + storage + business-logic&rdquo; is a very common
-case, especially a website.</p>
-
-<p>This convention forces the way of thinking, and makes
-it easier to reason. In essense, MVC itself is a
-design decision.</p>
 ]]></content>
   </entry>
   
