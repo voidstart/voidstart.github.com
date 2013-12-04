@@ -1,0 +1,56 @@
+---
+layout: post
+title: "RoR Day 20"
+date: 2013-12-04 21:40
+comments: true
+categories: 
+---
+
+Progress
+=
+- CreditCard Processor Gem (ActiveMerchant)
+- Haml ( Yet another compressed syntax like Sass )
+- More Plugins
+- Page 457/476 (96.0%) -> End of All Readings
+
+"Syntax Compression"
+=
+Replace a long "class=.." with "." is clearly easier to type.
+Less verbose, but semantically the same. What's changed is the
+syntax, or could say _compressed_.
+
+The more often used stuff are compressed to shorter things like just
+a single char. It's mathematically obvious that encodings like this save
+more space/typing.
+
+Just like in algebra, complex variables are represented by just a Greek letter.
+It makes writing, reading, reasoning all the easier.
+
+It's for humans, the hands and the brains.
+
+"Funny names"
+=
+Cucumber, Rspec, webrat.. It's definitely just 0s and 1s and nothing special.
+I think the _branding_ is to create identity, to advertise, to make an impression,
+to humans, ultimately.
+
+Serves similar to _syntax compression_, it taps to how human brain works, related
+to cognative science, neuro science and phycology. One of the ways for gamblers to
+remember cards is to associate each card with a unique object like a flag, a tree etc.
+It's the common memorization techniques.
+
+We could go futher to create deeper associations. One example is, to remember several
+random objects, one imagine a room he's in and _put_ the random things to certain
+locations in the room, as one _virtually_ walking inside it. This creates connections
+to things with one's sense of space ( room places ) and time ( walking ).
+
+Maybe next time I'll name some Gem this way, when I write my own gems.
+
+
+"Voila"
+=
+It's the end of first time reading this book. A lot is learned, a lot is made sense of,
+still a lot is missing the connection.
+
+Next up, I'll try to redo the app on my own, _without_ following the steps, to refresh the
+memory and understanding.
