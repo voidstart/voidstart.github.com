@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-04T23:01:19+08:00</updated>
+  <updated>2013-12-05T22:33:14+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 21]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/05/ror-day-21/"/>
+    <updated>2013-12-05T15:33:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/05/ror-day-21</id>
+    <content type="html"><![CDATA[<p>Quite accidently, it&rsquo;s been 21 days and I finished first reading of the Agile Rails book.
+Learn Rails in 21 days.. Well, not quite.</p>
+
+<p>It&rsquo;s usable and refreshing in many aspects, but far from masterery. If this were bicycle,
+I&rsquo;d be just able to make one meter without putting foot on the ground. You know the
+skills are just that many, but need more excercise to burn into the brain.</p>
+
+<p>So far I can remeber to do scaffold generation and db:migrate, sometimes just not sure
+when to use <code>rails</code> when to use <code>rake</code>. To add a new column, a new migration ( some kind of
+script ) has to be written and run and tracked. In <code>def change</code>, the syntax for new column
+is not obvious to the mind, had to look it up.</p>
+
+<p>The devil&rsquo;s in the details. The plan is bascially correct.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Algorithm Design Manual - 2]]></title>
@@ -718,36 +739,6 @@ can be viewed as &ldquo;conventions&rdquo;.</p>
 where to put validation, where to put tests&hellip; All have a &ldquo;conventional&rdquo; answer.</p>
 
 <p>Developers&#8217; needs are addressed to be easy to get started. Brilliant.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 3]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/17/ror-day-3/"/>
-    <updated>2013-11-17T23:43:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/17/ror-day-3</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>Object-Relational Mapping (ORM,Active Record)</li>
-<li>Ruby Syntax (array,hash,block,exception,class,module,YAML)</li>
-<li>page 70/476</li>
-</ul>
-
-
-<h1>&ldquo;First class function&rdquo;</h1>
-
-<p>Block of codes can be passed to functions as <em>values</em>.
-This is a powerful feature of the Ruby language.
-The &ldquo;yield&rdquo; call is interesting.  For-loops can be
-much different and this solves a lot of abstraction
-issue with things like the &ldquo;visitor pattern&rdquo;.</p>
-
-<p><em>Active Records</em> solves another issue with repetative
-duplication logic with class objects and database
-tables. They are very simular things in a way, but
-are much different to access. Active Records is a
-device for adapting the differences of access.</p>
 ]]></content>
   </entry>
   
