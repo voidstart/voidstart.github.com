@@ -1,0 +1,21 @@
+---
+layout: post
+title: "RoR Day 21"
+date: 2013-12-05 15:33
+comments: true
+categories: 
+---
+
+Quite accidently, it's been 21 days and I finished first reading of the Agile Rails book.
+Learn Rails in 21 days.. Well, not quite.
+
+It's usable and refreshing in many aspects, but far from masterery. If this were bicycle,
+I'd be just able to make one meter without putting foot on the ground. You know the
+skills are just that many, but need more excercise to burn into the brain.
+
+So far I can remeber to do scaffold generation and db:migrate, sometimes just not sure
+when to use `rails` when to use `rake`. To add a new column, a new migration ( some kind of
+script ) has to be written and run and tracked. In `def change`, the syntax for new column
+is not obvious to the mind, had to look it up.
+
+The devil's in the details. The plan is bascially correct. 
