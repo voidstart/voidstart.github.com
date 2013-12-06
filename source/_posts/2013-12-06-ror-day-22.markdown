@@ -1,0 +1,31 @@
+---
+layout: post
+title: "RoR Day 22"
+date: 2013-12-06 14:39
+comments: true
+categories: 
+---
+
+Learning without understanding doesn't last in memory. Just I tried to
+do something simple as add a few columns and update their values on my own.
+I got into the error of "Forbidden attributes". It appears to be related
+to [mass assignment problem](http://blog.xdite.net/posts/2012/03/05/github-hacked-rails-security/).
+
+The thing with understanding such a problem, is that the level of abstraction
+is a bit high. To think _natively_ on this, what exactly doesn't work?
+
+A http request doesn't trigger what it suppose to do, instead it returns a page generated
+by Rails displaying the _error trace_. To a stranger with reasonable intelligence, this is like
+non-sense. Leave me with either _Google it_ or search for a clue in my mind. If I then
+start to read the source codes of the trace, it will be overwhelming information, which 99% I don't 
+care for the problem at hand. My mind has some vague clue that this probably has something to do
+with _Edit_ "action" of "product" ActiveRecord, which involves model,database,controller, if more
+unlikely web server request/response, or other parts of Rails.
+
+Google is a helpful friend here, directing me to suspect the "mass assignment" problem that once
+in history got Github hacked. It has been a while, so modern Rails probably adapted and make
+security [precautions](http://net.tutsplus.com/tutorials/ruby/mass-assignment-rails-and-you/) that by default bans certain `update` function, causing this error.
+One of the link suggusts DHH has some Gist to [demo](https://gist.github.com/dhh/1975644) a way of resolution.
+
+I'm still making sense of all this. In the meantime, I continue to play with building the small
+book store app.
