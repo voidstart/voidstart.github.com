@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-06T21:58:30+08:00</updated>
+  <updated>2013-12-06T22:35:38+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Functional Programming -1]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/06/functional-programming-1/"/>
+    <updated>2013-12-06T21:59:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/06/functional-programming-1</id>
+    <content type="html"><![CDATA[<p>Today I spent some time watching an hour-long <a href="http://www.youtube.com/watch?v=ZhuHCtR3xq8&amp;feature=share">video</a> about <em>Functional Programming</em>.</p>
+
+<p>It made two significant points that struck me:</p>
+
+<ul>
+<li>types are just mathematical sets</li>
+<li>functions can be thought just like mathematical functions mapping set A to set B ( input type and return type )</li>
+</ul>
+
+
+<p>When thinking like this, I all of sudden get a hint of what a <em>type system</em> actually
+might be like. Although this talk is primarily to layout the work for <em>monads</em>, it
+really helps understanding programming from a different perspective than imperative.</p>
+
+<p>It&rsquo;s about one input and one output, but multiple input can be tricked to use <em>currying</em>
+to simulate ( or compose ). That has a lot of potential in reasoning about programs.</p>
+
+<p>Other aspects regarding philosophy also are quite remarkable:</p>
+
+<ul>
+<li>The word <em>simple</em> is ambiguous. It can be &ldquo;more explict, more obvious&rdquo; by some, but
+&ldquo;more implict, more abstract&rdquo; by others. The word <em>small</em> however, always implies <em>simple</em> but without
+the controversy.</li>
+<li><em>Composability</em> is <em>the</em> way to manage complexcity, or build one. This makes sense.
+Random stiched up things are scary and unmaintable. In his words, we spent to much time not
+productive, but just stiching tings up.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 22]]></title>
@@ -713,36 +749,6 @@ parameters. This can be fun.</p>
 <p>Between requests, special care should be done to
 maintain state. The <em>flash</em> data structure is used,
 so far most helpful in error notices.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 5]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/19/ror-day-5/"/>
-    <updated>2013-11-19T20:43:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/19/ror-day-5</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>css,scss</li>
-<li>layout (sidebar,banner)</li>
-<li>functional tests</li>
-<li>page 124/476</li>
-</ul>
-
-
-<h1>&ldquo;Functional Tests&rdquo;</h1>
-
-<p>Running tests is like have some robot always
-watching your back, which is nice.</p>
-
-<p>The tests written for this demo project follow
-such a pattern: add a feature first, then write
-a test to ensure <em>some</em> of its behavior.</p>
-
-<p>So far it&rsquo;s hard to imagine the way of writing
-tests first, because what to test is yet to be
-known.</p>
 ]]></content>
   </entry>
   

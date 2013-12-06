@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>RoR Day 13 - Wang Wei's Cup of Coffee</title>
+  <title>Functional Programming -1 - Wang Wei's Cup of Coffee</title>
   <meta name="author" content="Wang Wei">
   <link rel="author" href="humans.txt">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,9 +13,7 @@
   
     
   
-  <meta name="description" content="Progress Continue Review
-268/476 &ldquo;Ajax, Javascript, Css&rdquo; This is not something much about Ruby or Rails, just web dev
-in general. Ajax &hellip;">
+  <meta name="description" content="Today I spent some time watching an hour-long video about Functional Programming. It made two significant points that struck me: types are just &hellip;">
   
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -23,19 +21,17 @@ in general. Ajax &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://voidstart.github.io/blog/2013/11/27/ror-day-13/">
+  <link rel="canonical" href="http://voidstart.github.io/blog/2013/12/06/functional-programming-1/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Wang Wei's Cup of Coffee" type="application/atom+xml">
   <meta name="og:type" content="website" />
   <meta name="og:site_name" content="Wang Wei's Cup of Coffee" />
-  <meta name="og:title" content="RoR Day 13" />
-  <meta name="og:description" content="Progress Continue Review
-268/476 &ldquo;Ajax, Javascript, Css&rdquo; This is not something much about Ruby or Rails, just web dev
-in general. Ajax &hellip;" />
-  <meta name="og:url" content="http://voidstart.github.io/blog/2013/11/27/ror-day-13/"/>
-  <meta name="url" content="http://voidstart.github.io/blog/2013/11/27/ror-day-13/">
+  <meta name="og:title" content="Functional Programming -1" />
+  <meta name="og:description" content="Today I spent some time watching an hour-long video about Functional Programming. It made two significant points that struck me: types are just &hellip;" />
+  <meta name="og:url" content="http://voidstart.github.io/blog/2013/12/06/functional-programming-1/"/>
+  <meta name="url" content="http://voidstart.github.io/blog/2013/12/06/functional-programming-1/">
   
   <meta name="subject" content=""/>
   <meta name="category" content=""/>
@@ -80,7 +76,7 @@ in general. Ajax &hellip;" />
 
   <header>
     
-      <h1 class="entry-title">RoR Day 13</h1>
+      <h1 class="entry-title">Functional Programming -1</h1>
     
     
       <p class="meta">
@@ -105,7 +101,7 @@ in general. Ajax &hellip;" />
   
 
 
-<time datetime="2013-11-27T23:04:00+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2013</time> - 
+<time datetime="2013-12-06T21:59:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time> - 
         
 
 
@@ -115,34 +111,32 @@ in general. Ajax &hellip;" />
   </header>
 
 
-  <div class="entry-content"><h1>Progress</h1>
+  <div class="entry-content"><p>Today I spent some time watching an hour-long <a href="http://www.youtube.com/watch?v=ZhuHCtR3xq8&amp;feature=share">video</a> about <em>Functional Programming</em>.</p>
+
+<p>It made two significant points that struck me:</p>
 
 <ul>
-<li>Continue Review</li>
-<li>268/476</li>
+<li>types are just mathematical sets</li>
+<li>functions can be thought just like mathematical functions mapping set A to set B ( input type and return type )</li>
 </ul>
 
 
-<h1>&ldquo;Ajax, Javascript, Css&rdquo;</h1>
+<p>When thinking like this, I all of sudden get a hint of what a <em>type system</em> actually
+might be like. Although this talk is primarily to layout the work for <em>monads</em>, it
+really helps understanding programming from a different perspective than imperative.</p>
 
-<p>This is not something much about Ruby or Rails, just web dev
-in general.</p>
+<p>It&rsquo;s about one input and one output, but multiple input can be tricked to use <em>currying</em>
+to simulate ( or compose ). That has a lot of potential in reasoning about programs.</p>
 
-<p>Ajax allows interaction without page reload. A request still happens
-in the background, but only partical page is obtained. DOM tree largely
-remains the same, but part of the tree got replaced.</p>
-
-<p>Javascript is the language used to manipulate the DOM tree, and such
-code sources need to be adaptive to content, too. Thus, we could again
-use Ruby to generate JS code from templates, just like html pages.
-We ends up with: use ruby to do js, use js to do html, use html to do page.
-Just an amazing stack.</p>
-
-<p>Css is the language to do styling via several things:</p>
+<p>Other aspects regarding philosophy also are quite remarkable:</p>
 
 <ul>
-<li>Identify some elements in the DOM (via class, id)</li>
-<li>Describe the style of that element (font,color,size,margin..)</li>
+<li>The word <em>simple</em> is ambiguous. It can be &ldquo;more explict, more obvious&rdquo; by some, but
+&ldquo;more implict, more abstract&rdquo; by others. The word <em>small</em> however, always implies <em>simple</em> but without
+the controversy.</li>
+<li><em>Composability</em> is <em>the</em> way to manage complexcity, or build one. This makes sense.
+Random stiched up things are scary and unmaintable. In his words, we spent to much time not
+productive, but just stiching tings up.</li>
 </ul>
 
 </div>
@@ -171,7 +165,7 @@ Just an amazing stack.</p>
   
 
 
-<time datetime="2013-11-27T23:04:00+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2013</time> - 
+<time datetime="2013-12-06T21:59:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time> - 
       
 
 
@@ -179,7 +173,7 @@ Just an amazing stack.</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://voidstart.github.io/blog/2013/11/27/ror-day-13/" data-via="" data-counturl="http://voidstart.github.io/blog/2013/11/27/ror-day-13/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://voidstart.github.io/blog/2013/12/06/functional-programming-1/" data-via="" data-counturl="http://voidstart.github.io/blog/2013/12/06/functional-programming-1/" >Tweet</a>
   
   
   
@@ -187,10 +181,8 @@ Just an amazing stack.</p>
 
     
     
-      <a class="pull-left" href="/blog/2013/11/26/ror-day-12/" title="Previous Post: RoR Day 12">&laquo; RoR Day 12</a>
+      <a class="pull-left" href="/blog/2013/12/06/ror-day-22/" title="Previous Post: RoR Day 22">&laquo; RoR Day 22</a>
     
-    
-      <a class="pull-right" href="/blog/2013/11/28/ror-day-14/" title="Next Post: RoR Day 14">RoR Day 14 &raquo;</a>
     
   </footer>
 

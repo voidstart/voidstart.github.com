@@ -99,6 +99,84 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/12/06/functional-programming-1/">Functional Programming -1</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-06T21:59:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today I spent some time watching an hour-long <a href="http://www.youtube.com/watch?v=ZhuHCtR3xq8&amp;feature=share">video</a> about <em>Functional Programming</em>.</p>
+
+<p>It made two significant points that struck me:</p>
+
+<ul>
+<li>types are just mathematical sets</li>
+<li>functions can be thought just like mathematical functions mapping set A to set B ( input type and return type )</li>
+</ul>
+
+
+<p>When thinking like this, I all of sudden get a hint of what a <em>type system</em> actually
+might be like. Although this talk is primarily to layout the work for <em>monads</em>, it
+really helps understanding programming from a different perspective than imperative.</p>
+
+<p>It&rsquo;s about one input and one output, but multiple input can be tricked to use <em>currying</em>
+to simulate ( or compose ). That has a lot of potential in reasoning about programs.</p>
+
+<p>Other aspects regarding philosophy also are quite remarkable:</p>
+
+<ul>
+<li>The word <em>simple</em> is ambiguous. It can be &ldquo;more explict, more obvious&rdquo; by some, but
+&ldquo;more implict, more abstract&rdquo; by others. The word <em>small</em> however, always implies <em>simple</em> but without
+the controversy.</li>
+<li><em>Composability</em> is <em>the</em> way to manage complexcity, or build one. This makes sense.
+Random stiched up things are scary and unmaintable. In his words, we spent to much time not
+productive, but just stiching tings up.</li>
+</ul>
+
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/12/06/ror-day-22/">RoR Day 22</a></h1>
     
     
@@ -828,85 +906,6 @@ that can let us put our exceptions in the system.</p>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/29/ror-day-15/">RoR Day 15</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-29T22:03:00+08:00" pubdate data-updated="true">Nov 29<span>th</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Progress</h1>
-
-<ul>
-<li>Review</li>
-<li>Fix tests</li>
-<li>Setup a production environment</li>
-</ul>
-
-
-<h1>&ldquo;Production&rdquo;</h1>
-
-<p>Prototype and production are different. The gap may seem complex
-but it really shouldn&rsquo;t be. The stuff makes a good prototype should
-have good benefits on the production-type also. But then comes the
-question of why the gap.</p>
-
-<p>I&rsquo;ve talked about <a href="http://voidstart.com/blog/2013/11/25/ror-day-11/">Production Qualified</a> before,
-about the differences in existence. Now I wonder why one system cannot take the upsides of both.</p>
-
-<p>There really is no reason that a prototype shouldn&rsquo;t be stable and performant. The real problem
-is simplicity. Production systems are complex, especially for large scale. It takes extra logic
-to optimize/enhance for different situations, such as millions of concurrent users or bad 3G network.
-Security risks are high, storage loads are high and data is much more important that can never be
-lost. Logging is going to handle both the load and safisticated enough for deep analysis, even
-for graphing and data mining purposes.</p>
-
-<p>Why cannot all these be some kind of plugins that could be easily enabled by installation with
-a package manager. If the structure is well thought of to enable such reliable extension, there
-really should be no reason of why it can&rsquo;t be done.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -930,6 +929,10 @@ really should be no reason of why it can&rsquo;t be done.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/12/06/functional-programming-1/">Functional Programming -1</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/12/06/ror-day-22/">RoR Day 22</a>
         </li>
       
@@ -943,10 +946,6 @@ really should be no reason of why it can&rsquo;t be done.</p>
       
         <li>
           <a href="/blog/2013/12/04/ror-day-20/">RoR Day 20</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/12/03/algorithm-design-manual-1/">Algorithm Design Manual - 1</a>
         </li>
       
     </ul>
