@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-05T22:33:14+08:00</updated>
+  <updated>2013-12-06T21:58:30+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 22]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/06/ror-day-22/"/>
+    <updated>2013-12-06T14:39:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/06/ror-day-22</id>
+    <content type="html"><![CDATA[<p>Learning without understanding doesn&rsquo;t last in memory. Just I tried to
+do something simple as add a few columns and update their values on my own.
+I got into the error of &ldquo;Forbidden attributes&rdquo;. It appears to be related
+to <a href="http://blog.xdite.net/posts/2012/03/05/github-hacked-rails-security/">mass assignment problem</a>.</p>
+
+<p>The thing with understanding such a problem, is that the level of abstraction
+is a bit high. To think <em>natively</em> on this, what exactly doesn&rsquo;t work?</p>
+
+<p>A http request doesn&rsquo;t trigger what it suppose to do, instead it returns a page generated
+by Rails displaying the <em>error trace</em>. To a stranger with reasonable intelligence, this is like
+non-sense. Leave me with either <em>Google it</em> or search for a clue in my mind. If I then
+start to read the source codes of the trace, it will be overwhelming information, which 99% I don&rsquo;t
+care for the problem at hand. My mind has some vague clue that this probably has something to do
+with <em>Edit</em> &ldquo;action&rdquo; of &ldquo;product&rdquo; ActiveRecord, which involves model,database,controller, if more
+unlikely web server request/response, or other parts of Rails.</p>
+
+<p>Google is a helpful friend here, directing me to suspect the &ldquo;mass assignment&rdquo; problem that once
+in history got Github hacked. It has been a while, so modern Rails probably adapted and make
+security <a href="http://net.tutsplus.com/tutorials/ruby/mass-assignment-rails-and-you/">precautions</a> that by default bans certain <code>update</code> function, causing this error.
+One of the link suggusts DHH has some Gist to <a href="https://gist.github.com/dhh/1975644">demo</a> a way of resolution.</p>
+
+<p>I&rsquo;m still making sense of all this. In the meantime, I continue to play with building the small
+book store app.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 21]]></title>
@@ -712,33 +743,6 @@ a test to ensure <em>some</em> of its behavior.</p>
 <p>So far it&rsquo;s hard to imagine the way of writing
 tests first, because what to test is yet to be
 known.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 4]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/18/ror-day-4/"/>
-    <updated>2013-11-18T14:59:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/18/ror-day-4</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>More ruby syntax (require,||, bang method, predicate method)</li>
-<li>Depot app (pencil and paper design, db migrate/seed, sass, validation)</li>
-<li>page 108/476</li>
-</ul>
-
-
-<h1>&ldquo;Scaffold&rdquo;</h1>
-
-<p>This is not a new idea. MS word has &ldquo;template&rdquo; documents.
-Things are given to solve a particular common problem, with minimal defaults, which
-can be viewed as &ldquo;conventions&rdquo;.</p>
-
-<p>Common tasks like add a controller, add a table, a field, where to put stylesheets,
-where to put validation, where to put tests&hellip; All have a &ldquo;conventional&rdquo; answer.</p>
-
-<p>Developers&#8217; needs are addressed to be easy to get started. Brilliant.</p>
 ]]></content>
   </entry>
   

@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>RoR Day 3 - Wang Wei's Cup of Coffee</title>
+  <title>RoR Day 22 - Wang Wei's Cup of Coffee</title>
   <meta name="author" content="Wang Wei">
   <link rel="author" href="humans.txt">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,9 +13,8 @@
   
     
   
-  <meta name="description" content="Progress Object-Relational Mapping (ORM,Active Record)
-Ruby Syntax (array,hash,block,exception,class,module,YAML)
-page 70/476 &ldquo;First class &hellip;">
+  <meta name="description" content="Learning without understanding doesn&rsquo;t last in memory. Just I tried to
+do something simple as add a few columns and update their values on my &hellip;">
   
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -23,19 +22,18 @@ page 70/476 &ldquo;First class &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://voidstart.github.io/blog/2013/11/17/ror-day-3/">
+  <link rel="canonical" href="http://voidstart.github.io/blog/2013/12/06/ror-day-22/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Wang Wei's Cup of Coffee" type="application/atom+xml">
   <meta name="og:type" content="website" />
   <meta name="og:site_name" content="Wang Wei's Cup of Coffee" />
-  <meta name="og:title" content="RoR Day 3" />
-  <meta name="og:description" content="Progress Object-Relational Mapping (ORM,Active Record)
-Ruby Syntax (array,hash,block,exception,class,module,YAML)
-page 70/476 &ldquo;First class &hellip;" />
-  <meta name="og:url" content="http://voidstart.github.io/blog/2013/11/17/ror-day-3/"/>
-  <meta name="url" content="http://voidstart.github.io/blog/2013/11/17/ror-day-3/">
+  <meta name="og:title" content="RoR Day 22" />
+  <meta name="og:description" content="Learning without understanding doesn&rsquo;t last in memory. Just I tried to
+do something simple as add a few columns and update their values on my &hellip;" />
+  <meta name="og:url" content="http://voidstart.github.io/blog/2013/12/06/ror-day-22/"/>
+  <meta name="url" content="http://voidstart.github.io/blog/2013/12/06/ror-day-22/">
   
   <meta name="subject" content=""/>
   <meta name="category" content=""/>
@@ -80,7 +78,7 @@ page 70/476 &ldquo;First class &hellip;" />
 
   <header>
     
-      <h1 class="entry-title">RoR Day 3</h1>
+      <h1 class="entry-title">RoR Day 22</h1>
     
     
       <p class="meta">
@@ -105,7 +103,7 @@ page 70/476 &ldquo;First class &hellip;" />
   
 
 
-<time datetime="2013-11-17T23:43:00+08:00" pubdate data-updated="true">Nov 17<span>th</span>, 2013</time> - 
+<time datetime="2013-12-06T14:39:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time> - 
         
 
 
@@ -115,28 +113,29 @@ page 70/476 &ldquo;First class &hellip;" />
   </header>
 
 
-  <div class="entry-content"><h1>Progress</h1>
+  <div class="entry-content"><p>Learning without understanding doesn&rsquo;t last in memory. Just I tried to
+do something simple as add a few columns and update their values on my own.
+I got into the error of &ldquo;Forbidden attributes&rdquo;. It appears to be related
+to <a href="http://blog.xdite.net/posts/2012/03/05/github-hacked-rails-security/">mass assignment problem</a>.</p>
 
-<ul>
-<li>Object-Relational Mapping (ORM,Active Record)</li>
-<li>Ruby Syntax (array,hash,block,exception,class,module,YAML)</li>
-<li>page 70/476</li>
-</ul>
+<p>The thing with understanding such a problem, is that the level of abstraction
+is a bit high. To think <em>natively</em> on this, what exactly doesn&rsquo;t work?</p>
 
+<p>A http request doesn&rsquo;t trigger what it suppose to do, instead it returns a page generated
+by Rails displaying the <em>error trace</em>. To a stranger with reasonable intelligence, this is like
+non-sense. Leave me with either <em>Google it</em> or search for a clue in my mind. If I then
+start to read the source codes of the trace, it will be overwhelming information, which 99% I don&rsquo;t
+care for the problem at hand. My mind has some vague clue that this probably has something to do
+with <em>Edit</em> &ldquo;action&rdquo; of &ldquo;product&rdquo; ActiveRecord, which involves model,database,controller, if more
+unlikely web server request/response, or other parts of Rails.</p>
 
-<h1>&ldquo;First class function&rdquo;</h1>
+<p>Google is a helpful friend here, directing me to suspect the &ldquo;mass assignment&rdquo; problem that once
+in history got Github hacked. It has been a while, so modern Rails probably adapted and make
+security <a href="http://net.tutsplus.com/tutorials/ruby/mass-assignment-rails-and-you/">precautions</a> that by default bans certain <code>update</code> function, causing this error.
+One of the link suggusts DHH has some Gist to <a href="https://gist.github.com/dhh/1975644">demo</a> a way of resolution.</p>
 
-<p>Block of codes can be passed to functions as <em>values</em>.
-This is a powerful feature of the Ruby language.
-The &ldquo;yield&rdquo; call is interesting.  For-loops can be
-much different and this solves a lot of abstraction
-issue with things like the &ldquo;visitor pattern&rdquo;.</p>
-
-<p><em>Active Records</em> solves another issue with repetative
-duplication logic with class objects and database
-tables. They are very simular things in a way, but
-are much different to access. Active Records is a
-device for adapting the differences of access.</p>
+<p>I&rsquo;m still making sense of all this. In the meantime, I continue to play with building the small
+book store app.</p>
 </div>
 
 
@@ -163,7 +162,7 @@ device for adapting the differences of access.</p>
   
 
 
-<time datetime="2013-11-17T23:43:00+08:00" pubdate data-updated="true">Nov 17<span>th</span>, 2013</time> - 
+<time datetime="2013-12-06T14:39:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time> - 
       
 
 
@@ -171,7 +170,7 @@ device for adapting the differences of access.</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://voidstart.github.io/blog/2013/11/17/ror-day-3/" data-via="" data-counturl="http://voidstart.github.io/blog/2013/11/17/ror-day-3/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://voidstart.github.io/blog/2013/12/06/ror-day-22/" data-via="" data-counturl="http://voidstart.github.io/blog/2013/12/06/ror-day-22/" >Tweet</a>
   
   
   
@@ -179,10 +178,8 @@ device for adapting the differences of access.</p>
 
     
     
-      <a class="pull-left" href="/blog/2013/11/16/ror-day-2/" title="Previous Post: RoR Day 2">&laquo; RoR Day 2</a>
+      <a class="pull-left" href="/blog/2013/12/05/ror-day-21/" title="Previous Post: RoR Day 21">&laquo; RoR Day 21</a>
     
-    
-      <a class="pull-right" href="/blog/2013/11/18/ror-day-4/" title="Next Post: RoR Day 4">RoR Day 4 &raquo;</a>
     
   </footer>
 
