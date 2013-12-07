@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Bitcoin - 1"
+date: 2013-12-07 09:47
+comments: true
+categories: 
+---
+
+I've been observing Bitcoin and read about it for some time now.
+I think I'll just give it some of my opinions.
+
+Recently Bitcoin has rised from a niche toy ( when you could buy a pizza for 10,000 BTC ), to
+the all time high of over 1000 USD per BTC. It entered pubic sight and caught the attention of
+governments. There are many stories to tell, let me just layout the ones I think are significant
+and worth some thinking:
+
+- some consider BTC one of [Ponzi scheme](http://www.garynorth.com/public/11828.cfm)
+- there are BTC-backed organized crimial black market for drugs, guns etc.
+- BTC are used for cross-border money transfer with low transaction fees
+- BTC are used as marketing stunts ( some real estate even sold for BTC )
+- BTC has their own exchanges like a stock market
+- BTC are said to have risk of being used for money laundering
+- BTC heists. Virtually impossible to trace.
+- there is a whole small industry to _print_ the money of BTC (mining hardware,software)
+- Finally, BTC are considered currency of the future
+
+Just 2 days ago, the central bank of China issued some [notice](http://www.pbc.gov.cn/publish/goutongjiaoliu/524/2013/20131205153156832222251/20131205153156832222251_.html) ( essentically government policies ) to
+ban the use of BTC by any banks or financial instituations, or any commercial payments. 
+The price of BTC dropped significantly following the news.
+
+My opinions can be expressed by my predictions of the future of Bitcoin:
+
+- Bitcoin ( or its variant ) _will_ survive, because it's a credit system that offers unique features:
+anonymity. It's perfect for criminal activities and other secret merchant activities. For this single
+reason, it can survive for as long as there's a demand for such a credit system. Sad, but unavoidable.
+- For BTC to have _value_, it has to be backed by _real money_ that are exchangable to general society
+economic merchandises. Currently it has been the BTC exchanges, which are filled with speculators.
+What _I predict will_ appear is something like a BTC bank, that an organization will _offcially back_ the BTC similar to the repayability of dollar ( once in history USD are exchangable to gold ). Such bank, whether above ground or underground, will show up simply because it's profitable and sustainable from collecting transaction fees. Imagine such _bank_ gurentees 1 USD to 1 BTC repayment at any time, if such bank can be trusted enough, BTC essentically become USD with added property of anomymity. By BTS's current limit of 21 million, this will be 21 million of this speical kind of USD.
+-  Speculators could keep the price of BTC at high level, if they allow their money to be freezed in the form of BTC. However, the game will eventually become in equilibrium, the number of speculators and
+speculator money will cease to increase, and some people inevitably would like to withdraw their money to do something else. The over-evaluation period will end, the price will drop to a level that is
+suitable to the demand of the said above use: demand for anonymous money for dark activities.
+
+I could even provide a wild guess for the lower bound of BTC price. Since the dark market's global 
+scale is at least in the billions USD range. Let's give an absurd value of 1 Billion usage of BTC
+as the means of trade. 1,000,000,000 / 21,000,000 = 47.6 USD.
+
+Conclusion: BTC under 47.6$ will be a buy.
+
+Disclaimer: Don't take this seriously. Pure speculation.
