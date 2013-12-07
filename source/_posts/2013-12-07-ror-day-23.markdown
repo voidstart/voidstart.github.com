@@ -1,0 +1,24 @@
+---
+layout: post
+title: "RoR Day 23"
+date: 2013-12-07 16:11
+comments: true
+categories: 
+---
+
+The correct way to handle `ForbiddenAttribute` issue : [Put in controller](http://stackoverflow.com/questions/17371334/how-is-attr-accessible-used-in-rails-4). Actually Rails 4 already
+automatically generate code which is a private method to `permit` the paramters of assignment.
+
+After setting the `permit` method, things are working now.
+
+Next I modified the view of the products index a bit with a bit of plain HTML table. It's not "fancy" as Depot, but functional enough for me. 
+
+Then I want the home page to show the products index, modified the route and
+it's a small change. At least now I know where to look for the changes when I want to do something.
+The comments in those generated files are helpful.
+
+Now I'd like the _sidebar_, which I know got to do with _layout_. Then I faced the problem of writing
+css, which I basically still knows nothing about. Refer to the scss of Depot, I found out about the
+`float` attribute, which probably makes the left/right split to panes.
+
+There's a great [article](http://www.jaceju.net/blog/archives/18/) on this.
