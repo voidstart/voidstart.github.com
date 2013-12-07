@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-07T21:52:26+08:00</updated>
+  <updated>2013-12-07T22:32:46+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -22,6 +22,29 @@
 automatically generate code which is a private method to <code>permit</code> the paramters of assignment.</p>
 
 <p>After setting the <code>permit</code> method, things are working now.</p>
+
+<figure class='code'><figcaption><span>Generated code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="kp">private</span>
+</span><span class='line'><span class="c1"># Use callbacks to share common setup or constraints between actions.</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">set_product</span>
+</span><span class='line'>  <span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Never trust parameters from the scary internet, only allow the white list through.</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">product_params</span>
+</span><span class='line'>  <span class="n">params</span><span class="o">[</span><span class="ss">:product</span><span class="o">].</span><span class="n">permit</span><span class="p">(</span><span class="ss">:price</span><span class="p">,</span><span class="ss">:imgurl</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>Next I modified the view of the products index a bit with a bit of plain HTML table. It&rsquo;s not &ldquo;fancy&rdquo; as Depot, but functional enough for me.</p>
 
