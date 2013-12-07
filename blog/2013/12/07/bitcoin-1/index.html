@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>RoR Day 19 - Wang Wei's Cup of Coffee</title>
+  <title>Bitcoin - 1 - Wang Wei's Cup of Coffee</title>
   <meta name="author" content="Wang Wei">
   <link rel="author" href="humans.txt">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,11 +13,8 @@
   
     
   
-  <meta name="description" content="Progress Migrations ( Table, Index, Keys )
-Standalone scripts ( Extension to Ruby, use of Active Support )
-Gem, Gemfile, Bundle
-Rack
-Page 441/476 ( &hellip;">
+  <meta name="description" content="I&rsquo;ve been observing Bitcoin and read about it for some time now.
+I think I&rsquo;ll just give it some of my opinions. Recently Bitcoin has &hellip;">
   
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -25,21 +22,18 @@ Page 441/476 ( &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://voidstart.github.io/blog/2013/12/03/ror-day-19/">
+  <link rel="canonical" href="http://voidstart.github.io/blog/2013/12/07/bitcoin-1/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Wang Wei's Cup of Coffee" type="application/atom+xml">
   <meta name="og:type" content="website" />
   <meta name="og:site_name" content="Wang Wei's Cup of Coffee" />
-  <meta name="og:title" content="RoR Day 19" />
-  <meta name="og:description" content="Progress Migrations ( Table, Index, Keys )
-Standalone scripts ( Extension to Ruby, use of Active Support )
-Gem, Gemfile, Bundle
-Rack
-Page 441/476 ( &hellip;" />
-  <meta name="og:url" content="http://voidstart.github.io/blog/2013/12/03/ror-day-19/"/>
-  <meta name="url" content="http://voidstart.github.io/blog/2013/12/03/ror-day-19/">
+  <meta name="og:title" content="Bitcoin - 1" />
+  <meta name="og:description" content="I&rsquo;ve been observing Bitcoin and read about it for some time now.
+I think I&rsquo;ll just give it some of my opinions. Recently Bitcoin has &hellip;" />
+  <meta name="og:url" content="http://voidstart.github.io/blog/2013/12/07/bitcoin-1/"/>
+  <meta name="url" content="http://voidstart.github.io/blog/2013/12/07/bitcoin-1/">
   
   <meta name="subject" content=""/>
   <meta name="category" content=""/>
@@ -84,7 +78,7 @@ Page 441/476 ( &hellip;" />
 
   <header>
     
-      <h1 class="entry-title">RoR Day 19</h1>
+      <h1 class="entry-title">Bitcoin - 1</h1>
     
     
       <p class="meta">
@@ -109,7 +103,7 @@ Page 441/476 ( &hellip;" />
   
 
 
-<time datetime="2013-12-03T14:22:00+08:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2013</time> - 
+<time datetime="2013-12-07T09:47:00+08:00" pubdate data-updated="true">Dec 7<span>th</span>, 2013</time> - 
         
 
 
@@ -119,47 +113,53 @@ Page 441/476 ( &hellip;" />
   </header>
 
 
-  <div class="entry-content"><h1>Progress</h1>
+  <div class="entry-content"><p>I&rsquo;ve been observing Bitcoin and read about it for some time now.
+I think I&rsquo;ll just give it some of my opinions.</p>
+
+<p>Recently Bitcoin has rised from a niche toy ( when you could buy a pizza for 10,000 BTC ), to
+the all time high of over 1000 USD per BTC. It entered pubic sight and caught the attention of
+governments. There are many stories to tell, let me just layout the ones I think are significant
+and worth some thinking:</p>
 
 <ul>
-<li>Migrations ( Table, Index, Keys )</li>
-<li>Standalone scripts ( Extension to Ruby, use of Active Support )</li>
-<li>Gem, Gemfile, Bundle</li>
-<li>Rack</li>
-<li>Page 441/476 (92.6%)</li>
+<li>some consider BTC one of <a href="http://www.garynorth.com/public/11828.cfm">Ponzi scheme</a></li>
+<li>there are BTC-backed organized crimial black market for drugs, guns etc.</li>
+<li>BTC are used for cross-border money transfer with low transaction fees</li>
+<li>BTC are used as marketing stunts ( some real estate even sold for BTC )</li>
+<li>BTC has their own exchanges like a stock market</li>
+<li>BTC are said to have risk of being used for money laundering</li>
+<li>BTC heists. Virtually impossible to trace.</li>
+<li>there is a whole small industry to <em>print</em> the money of BTC (mining hardware,software)</li>
+<li>Finally, BTC are considered currency of the future</li>
 </ul>
 
 
-<h1>&ldquo;Value of the Standalone&rdquo;</h1>
+<p>Just 2 days ago, the central bank of China issued some <a href="http://www.pbc.gov.cn/publish/goutongjiaoliu/524/2013/20131205153156832222251/20131205153156832222251_.html">notice</a> ( essentically government policies ) to
+ban the use of BTC by any banks or financial instituations, or any commercial payments.
+The price of BTC dropped significantly following the news.</p>
 
-<p>It&rsquo;ll be wonderful if the table legs are not just for the table, but
-can be useful as something else. It&rsquo;ll be wonderful if those legs
-can be easily plug-out and put into another furniture as a useful component.
-Rails&#8217; active support, active records are very useful to help build other things.</p>
-
-<p>Standalone implies decoupling, compartmentalized, component-oriented.
-It usually means there&rsquo;s less to worry about, and only one interaction is to be concerned.
-The Rails Agile Book talks about <em>nonbrowser</em> application, sugguesting no browser is involved
-in interaction. This makes several important components irrelevant (views, layouts), but the model
-is still to be interacted with.</p>
-
-<p>Scriptability is a sweet candy. It feels great to <em>tap</em> into the <em>runtime</em> of an app.
-<code>rails console</code> is like a console from games such as Quake and Counter-Strike.
-The console offers examination and modification at <em>runtime</em>. What&rsquo;s more, Rails offers
-web-service like API that are scriptable (JSON, XML interfaces), with similar human experience to local
-development. The book describes this similarity as <em>magic</em>.</p>
-
-<p>Dependencies versioning. What Gemfile does is both simple and powerful. What make it look better than
-other systems are:</p>
+<p>My opinions can be expressed by my predictions of the future of Bitcoin:</p>
 
 <ul>
-<li>Semantic versioning</li>
-<li>Uniformity</li>
+<li>Bitcoin ( or its variant ) <em>will</em> survive, because it&rsquo;s a credit system that offers unique features:
+anonymity. It&rsquo;s perfect for criminal activities and other secret merchant activities. For this single
+reason, it can survive for as long as there&rsquo;s a demand for such a credit system. Sad, but unavoidable.</li>
+<li>For BTC to have <em>value</em>, it has to be backed by <em>real money</em> that are exchangable to general society
+economic merchandises. Currently it has been the BTC exchanges, which are filled with speculators.
+What <em>I predict will</em> appear is something like a BTC bank, that an organization will <em>offcially back</em> the BTC similar to the repayability of dollar ( once in history USD are exchangable to gold ). Such bank, whether above ground or underground, will show up simply because it&rsquo;s profitable and sustainable from collecting transaction fees. Imagine such <em>bank</em> gurentees 1 USD to 1 BTC repayment at any time, if such bank can be trusted enough, BTC essentically become USD with added property of anomymity. By BTS&rsquo;s current limit of 21 million, this will be 21 million of this speical kind of USD.</li>
+<li>Speculators could keep the price of BTC at high level, if they allow their money to be freezed in the form of BTC. However, the game will eventually become in equilibrium, the number of speculators and
+speculator money will cease to increase, and some people inevitably would like to withdraw their money to do something else. The over-evaluation period will end, the price will drop to a level that is
+suitable to the demand of the said above use: demand for anonymous money for dark activities.</li>
 </ul>
 
 
-<p>Rack is like yet another proxy/agent/adapter/.. (whatever people feel like to call such things), but for
-integration with web-servers.</p>
+<p>I could even provide a wild guess for the lower bound of BTC price. Since the dark market&rsquo;s global
+scale is at least in the billions USD range. Let&rsquo;s give an absurd value of 1 Billion usage of BTC
+as the means of trade. 1,000,000,000 / 21,000,000 = 47.6 USD.</p>
+
+<p>Conclusion: BTC under 47.6$ will be a buy.</p>
+
+<p>Disclaimer: Don&rsquo;t take this seriously. Pure speculation.</p>
 </div>
 
 
@@ -186,7 +186,7 @@ integration with web-servers.</p>
   
 
 
-<time datetime="2013-12-03T14:22:00+08:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2013</time> - 
+<time datetime="2013-12-07T09:47:00+08:00" pubdate data-updated="true">Dec 7<span>th</span>, 2013</time> - 
       
 
 
@@ -194,7 +194,7 @@ integration with web-servers.</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://voidstart.github.io/blog/2013/12/03/ror-day-19/" data-via="" data-counturl="http://voidstart.github.io/blog/2013/12/03/ror-day-19/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://voidstart.github.io/blog/2013/12/07/bitcoin-1/" data-via="" data-counturl="http://voidstart.github.io/blog/2013/12/07/bitcoin-1/" >Tweet</a>
   
   
   
@@ -202,10 +202,8 @@ integration with web-servers.</p>
 
     
     
-      <a class="pull-left" href="/blog/2013/12/02/ror-day-18/" title="Previous Post: RoR Day 18">&laquo; RoR Day 18</a>
+      <a class="pull-left" href="/blog/2013/12/06/functional-programming-1/" title="Previous Post: Functional Programming -1">&laquo; Functional Programming -1</a>
     
-    
-      <a class="pull-right" href="/blog/2013/12/03/algorithm-design-manual-1/" title="Next Post: Algorithm Design Manual - 1">Algorithm Design Manual - 1 &raquo;</a>
     
   </footer>
 
