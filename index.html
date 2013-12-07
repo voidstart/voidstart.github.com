@@ -99,6 +99,72 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/12/07/ror-day-23/">RoR Day 23</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-07T16:11:00+08:00" pubdate data-updated="true">Dec 7<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The correct way to handle <code>ForbiddenAttribute</code> issue : <a href="http://stackoverflow.com/questions/17371334/how-is-attr-accessible-used-in-rails-4">Put in controller</a>. Actually Rails 4 already
+automatically generate code which is a private method to <code>permit</code> the paramters of assignment.</p>
+
+<p>After setting the <code>permit</code> method, things are working now.</p>
+
+<p>Next I modified the view of the products index a bit with a bit of plain HTML table. It&rsquo;s not &ldquo;fancy&rdquo; as Depot, but functional enough for me.</p>
+
+<p>Then I want the home page to show the products index, modified the route and
+it&rsquo;s a small change. At least now I know where to look for the changes when I want to do something.
+The comments in those generated files are helpful.</p>
+
+<p>Now I&rsquo;d like the <em>sidebar</em>, which I know got to do with <em>layout</em>. Then I faced the problem of writing
+css, which I basically still knows nothing about. Refer to the scss of Depot, I found out about the
+<code>float</code> attribute, which probably makes the left/right split to panes.</p>
+
+<p>There&rsquo;s a great <a href="http://www.jaceju.net/blog/archives/18/">article</a> on this.</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/12/07/bitcoin-1/">Bitcoin - 1</a></h1>
     
     
@@ -828,96 +894,6 @@ objects)</p>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/01/ror-day-17/">RoR Day 17</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-01T22:37:00+08:00" pubdate data-updated="true">Dec 1<span>st</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Progress</h1>
-
-<ul>
-<li>Finish review of the first half of the book</li>
-<li>Dig more into Active Records</li>
-<li>Dig deeper into Routes</li>
-<li>Page 339/476 (71.2%)</li>
-</ul>
-
-
-<h1>&ldquo;Semantic naming&rdquo;</h1>
-
-<p>Normally in languages, names are just symbols, identifiers, nothing much than
-some random letters.</p>
-
-<p>Here we have Rails, names have meanings. <code>find()</code>, <code>find_by_xxx()</code>, <code>find_all_by_xxx()</code>,
-esencially it&rsquo;s embedded APIs in namings. I am not sure this is like meta-programming such
-as C++ macros, it&rsquo;s more powerful and natural.<br/>
-I think it at least has two advantages :</p>
-
-<ul>
-<li>Clean syntax. Less clutter like brackets, easy to read.</li>
-<li>Natrual feeling. Reads more like English.</li>
-</ul>
-
-
-<p>A good idea for language design.</p>
-
-<h1>&ldquo;SQL injection&rdquo;</h1>
-
-<p>A rather <em>old</em> topic, yet still very relevent.</p>
-
-<p>On the surface, this is about escaping syntax tricks. What&rsquo;s more fundamental is, the question
-of what is data and what is code. Code and Data are represented by the same 1 and 0&rsquo;s and transferred
-all the same. The point of interpretation, or execution, is critical for avoiding unintended (or
-ill-intended) treating data as code. This is the root of all priviledge stealing in systems by design.</p>
-
-<p>Of course hackers can still hack accounts and passwords by brute-force guessing or social means. But treating
-data as code is <em>the</em> technical vulnerability to fight in all sorts of systems, be it SQL, shell codes, overflows etc.
-The idea is to let the machine <em>run MY code</em>.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -941,6 +917,10 @@ The idea is to let the machine <em>run MY code</em>.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/12/07/ror-day-23/">RoR Day 23</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/12/07/bitcoin-1/">Bitcoin - 1</a>
         </li>
       
@@ -954,10 +934,6 @@ The idea is to let the machine <em>run MY code</em>.</p>
       
         <li>
           <a href="/blog/2013/12/05/ror-day-21/">RoR Day 21</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/12/04/algorithm-design-manual-2/">Algorithm Design Manual - 2</a>
         </li>
       
     </ul>

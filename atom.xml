@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-07T14:18:28+08:00</updated>
+  <updated>2013-12-07T21:52:26+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 23]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/07/ror-day-23/"/>
+    <updated>2013-12-07T16:11:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/07/ror-day-23</id>
+    <content type="html"><![CDATA[<p>The correct way to handle <code>ForbiddenAttribute</code> issue : <a href="http://stackoverflow.com/questions/17371334/how-is-attr-accessible-used-in-rails-4">Put in controller</a>. Actually Rails 4 already
+automatically generate code which is a private method to <code>permit</code> the paramters of assignment.</p>
+
+<p>After setting the <code>permit</code> method, things are working now.</p>
+
+<p>Next I modified the view of the products index a bit with a bit of plain HTML table. It&rsquo;s not &ldquo;fancy&rdquo; as Depot, but functional enough for me.</p>
+
+<p>Then I want the home page to show the products index, modified the route and
+it&rsquo;s a small change. At least now I know where to look for the changes when I want to do something.
+The comments in those generated files are helpful.</p>
+
+<p>Now I&rsquo;d like the <em>sidebar</em>, which I know got to do with <em>layout</em>. Then I faced the problem of writing
+css, which I basically still knows nothing about. Refer to the scss of Depot, I found out about the
+<code>float</code> attribute, which probably makes the left/right split to panes.</p>
+
+<p>There&rsquo;s a great <a href="http://www.jaceju.net/blog/archives/18/">article</a> on this.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bitcoin - 1]]></title>
@@ -752,34 +776,6 @@ of quality. The downside is it cuts into your imagination space.</p>
 
 <p>The good thing is you get started and have an idea, then starting to
 erase the form and draw your own image. :D</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 7]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/21/ror-day-7/"/>
-    <updated>2013-11-21T20:33:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/21/ror-day-7</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>Partial templates</li>
-<li>Ajax</li>
-<li>Page 163/476</li>
-</ul>
-
-
-<h1>&ldquo;Templates as methods&rdquo;</h1>
-
-<p>It&rsquo;s a great idea, actually, more of a general idea.</p>
-
-<p>Templates for web code are like methods that can be
-reused, parameterized. This analogy can be extended
-to many things, and I believe great things will come
-out of it. Think of pictures as methods, videos as
-methods. Designs, colors, quotes, that can have <em>API</em>,
-can be auto-suggusted or auto-completed, with detailed
-parameters. This can be fun.</p>
 ]]></content>
   </entry>
   
