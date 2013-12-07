@@ -9,7 +9,7 @@ categories:
 I've been observing Bitcoin and read about it for some time now.
 I think I'll just give it some of my opinions.
 
-Recently Bitcoin has rised from a niche toy ( when you could buy a pizza for 10,000 BTC ), to
+Recently Bitcoin has risen from a niche toy ( when you could buy a pizza for 10,000 BTC ), to
 the all time high of over 1000 USD per BTC. It entered pubic sight and caught the attention of
 governments. There are many stories to tell, let me just layout the ones I think are significant
 and worth some thinking:
