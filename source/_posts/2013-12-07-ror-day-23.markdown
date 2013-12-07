@@ -10,7 +10,18 @@ The correct way to handle `ForbiddenAttribute` issue : [Put in controller](http:
 automatically generate code which is a private method to `permit` the paramters of assignment.
 
 After setting the `permit` method, things are working now.
+``` ruby Generated code
+private
+# Use callbacks to share common setup or constraints between actions.
+def set_product
+  @product = Product.find(params[:id])
+end
 
+# Never trust parameters from the scary internet, only allow the white list through.
+def product_params
+  params[:product].permit(:price,:imgurl)
+end
+```
 Next I modified the view of the products index a bit with a bit of plain HTML table. It's not "fancy" as Depot, but functional enough for me. 
 
 Then I want the home page to show the products index, modified the route and
