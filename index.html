@@ -99,6 +99,74 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/12/08/ror-day-24/">RoR Day 24</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-08T21:59:00+08:00" pubdate data-updated="true">Dec 8<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Turns out the <em>view</em> alone is a totally new world. I guess this is
+what they call a <em>front end</em> ? CSS is a language more or less similar
+to XML, which is structured, nested, element/attribute oriented language.</p>
+
+<p>It&rsquo;s declarative. This makes a difference. Programming in declarative needs
+an understanding of the <em>engine</em> that&rsquo;s behind the interpretation of such
+rules. However, I don&rsquo;t have to step-by-step simulate a running program.
+All I have to do, is just start with a blank paper, and <em>add</em> the <em>effects</em>
+of those elements and attributes under the rules. The good thing about this
+kind of system is it&rsquo;s constructed by superposition, like linear systems.
+While imperative programming is more about states and transition in time,
+the reasoning is harder and more delicate.</p>
+
+<p>Learning CSS elements and properties certainly take time. However,
+to have some sense of design and imagine a <em>target</em> to draw is a skill
+of another level. Perhaps I should just be satisfied at the moment
+for some basic tricks like positions, fonts, and just dividing the page
+into some blocks of areas.</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/12/07/ror-day-23/">RoR Day 23</a></h1>
     
     
@@ -823,100 +891,6 @@ integration with web-servers.</p>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/02/ror-day-18/">RoR Day 18</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-02T17:43:00+08:00" pubdate data-updated="true">Dec 2<span>nd</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Progress</h1>
-
-<ul>
-<li>render(), Action View</li>
-<li>Caching page,action,segment</li>
-<li>Migration</li>
-<li>Page 407/476 (85.5%)</li>
-</ul>
-
-
-<h1>&ldquo;Cache and State&rdquo;</h1>
-
-<p>Cache is in pinciple just a faster copy of something else.
-Yet the simplicity of its surface does not warrant it&rsquo;s simple
-underneath. Caching is one of <em>the</em> hard problems in many systems.</p>
-
-<p>When create cache, immediately worry about several things:
-capacity, synchronicity, invalidation. Worse, cache systems tend to
-<em>cascade</em> from level to level. CPU&rsquo;s have severl levels of caching.</p>
-
-<p>Be fast, but definitely don&rsquo;t be wrong.
-Trade space for speed, without sacrificing correctness.</p>
-
-<p>Think of it as two worlds: the cached world, the <em>real</em> world.
-In short: Use the cached world when it&rsquo;s a correct mirror, when
-it&rsquo;s not, mirror first. How does it become un-mirrored/out of sync?
-Either <em>real</em> world updated, or the cached world breaks (dropped cache
-or non-existent).</p>
-
-<p>Thinking this way helps understanding the whole point of cache systems.</p>
-
-<h1>&ldquo;Partials&rdquo;</h1>
-
-<p>Classic divide and conquer. Big worlds versus nested smaller worlds.</p>
-
-<p>What partials do are analogous to functions, just for views. <em>Context</em> is what is passed into
-the smaller worlds. With the <em>context</em>, some actions are performed, to either
-produce a side-effect (like IO) or just prepare some data (returned value like string,
-objects)</p>
-
-<h1>&ldquo;Migration&rdquo;</h1>
-
-<p>It&rsquo;s like Git log, but version controling the database.
- Keeping track of changes, that could be reverted.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -940,6 +914,10 @@ objects)</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/12/08/ror-day-24/">RoR Day 24</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/12/07/ror-day-23/">RoR Day 23</a>
         </li>
       
@@ -953,10 +931,6 @@ objects)</p>
       
         <li>
           <a href="/blog/2013/12/06/ror-day-22/">RoR Day 22</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/12/05/ror-day-21/">RoR Day 21</a>
         </li>
       
     </ul>
