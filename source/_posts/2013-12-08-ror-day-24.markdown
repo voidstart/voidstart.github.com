@@ -1,0 +1,26 @@
+---
+layout: post
+title: "RoR Day 24"
+date: 2013-12-08 21:59
+comments: true
+categories: 
+---
+
+Turns out the _view_ alone is a totally new world. I guess this is
+what they call a _front end_ ? CSS is a language more or less similar
+to XML, which is structured, nested, element/attribute oriented language.
+
+It's declarative. This makes a difference. Programming in declarative needs
+an understanding of the *engine* that's behind the interpretation of such
+rules. However, I don't have to step-by-step simulate a running program.
+All I have to do, is just start with a blank paper, and _add_ the _effects_
+of those elements and attributes under the rules. The good thing about this
+kind of system is it's constructed by superposition, like linear systems.
+While imperative programming is more about states and transition in time, 
+the reasoning is harder and more delicate.
+
+Learning CSS elements and properties certainly take time. However,
+to have some sense of design and imagine a _target_ to draw is a skill
+of another level. Perhaps I should just be satisfied at the moment
+for some basic tricks like positions, fonts, and just dividing the page
+into some blocks of areas.
