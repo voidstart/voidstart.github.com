@@ -1,0 +1,35 @@
+---
+layout: post
+title: "RoR Day 25"
+date: 2013-12-09 22:40
+comments: true
+categories: 
+---
+
+Towards understandng of the routes
+=
+
+Let me layout the gist of routing:
+
+User browser side:
+	Request: HTTP_METHOD + URL
+	HTTP_METHOD: One  of GET, POST, DELETE, PUT
+	URL: Something like /products/17
+
+Server side:
+	Needs to decide: Controller, Action, and Params
+
+Example:  /products/17
+	"products" :-> Controller
+	"17" :-> :id (of  Params)
+	Now what's the _Action_ ? (Method to call)
+	Answer: Depends on _HTTP_METHOD_ , which is not part of URL, but part of
+		the underlying communication from browser. ex. GET -> Show (Quite obvious)
+
+
+Helpers:
+	In Rails code, both URL and HTTP_METHOD for the generated link can be constructed
+	in some kind of wrapper method like `product_path(1)`. This is part of Rails evolution [history](http://stackoverflow.com/questions/1548009/rails-link-to-routes-and-nested-resources).
+
+What's troubling me is it's fair enough to understand the explict way of just write out the URL,
+but sometimes confusing to figure out what exactly some helper would generate.
