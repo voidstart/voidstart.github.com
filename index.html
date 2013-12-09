@@ -99,6 +99,89 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/12/09/ror-day-25/">RoR Day 25</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-09T22:40:00+08:00" pubdate data-updated="true">Dec 9<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Towards understandng of the routes</h1>
+
+<p>Let me layout the gist of routing:</p>
+
+<p>User browser side:</p>
+
+<pre><code>Request: HTTP_METHOD + URL
+HTTP_METHOD: One  of GET, POST, DELETE, PUT
+URL: Something like /products/17
+</code></pre>
+
+<p>Server side:</p>
+
+<pre><code>Needs to decide: Controller, Action, and Params
+</code></pre>
+
+<p>Example:  /products/17</p>
+
+<pre><code>"products" :-&gt; Controller
+"17" :-&gt; :id (of  Params)
+Now what's the _Action_ ? (Method to call)
+Answer: Depends on _HTTP_METHOD_ , which is not part of URL, but part of
+    the underlying communication from browser. ex. GET -&gt; Show (Quite obvious)
+</code></pre>
+
+<p>Helpers:</p>
+
+<pre><code>In Rails code, both URL and HTTP_METHOD for the generated link can be constructed
+in some kind of wrapper method like `product_path(1)`. This is part of Rails evolution [history](http://stackoverflow.com/questions/1548009/rails-link-to-routes-and-nested-resources).
+</code></pre>
+
+<p>What&rsquo;s troubling me is it&rsquo;s fair enough to understand the explict way of just write out the URL,
+but sometimes confusing to figure out what exactly some helper would generate.</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/12/08/ror-day-24/">RoR Day 24</a></h1>
     
     
@@ -800,97 +883,6 @@ I&rsquo;ll start with selected chapters/sections, and go to basics when in doubt
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/03/ror-day-19/">RoR Day 19</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-03T14:22:00+08:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Progress</h1>
-
-<ul>
-<li>Migrations ( Table, Index, Keys )</li>
-<li>Standalone scripts ( Extension to Ruby, use of Active Support )</li>
-<li>Gem, Gemfile, Bundle</li>
-<li>Rack</li>
-<li>Page 441/476 (92.6%)</li>
-</ul>
-
-
-<h1>&ldquo;Value of the Standalone&rdquo;</h1>
-
-<p>It&rsquo;ll be wonderful if the table legs are not just for the table, but
-can be useful as something else. It&rsquo;ll be wonderful if those legs
-can be easily plug-out and put into another furniture as a useful component.
-Rails&#8217; active support, active records are very useful to help build other things.</p>
-
-<p>Standalone implies decoupling, compartmentalized, component-oriented.
-It usually means there&rsquo;s less to worry about, and only one interaction is to be concerned.
-The Rails Agile Book talks about <em>nonbrowser</em> application, sugguesting no browser is involved
-in interaction. This makes several important components irrelevant (views, layouts), but the model
-is still to be interacted with.</p>
-
-<p>Scriptability is a sweet candy. It feels great to <em>tap</em> into the <em>runtime</em> of an app.
-<code>rails console</code> is like a console from games such as Quake and Counter-Strike.
-The console offers examination and modification at <em>runtime</em>. What&rsquo;s more, Rails offers
-web-service like API that are scriptable (JSON, XML interfaces), with similar human experience to local
-development. The book describes this similarity as <em>magic</em>.</p>
-
-<p>Dependencies versioning. What Gemfile does is both simple and powerful. What make it look better than
-other systems are:</p>
-
-<ul>
-<li>Semantic versioning</li>
-<li>Uniformity</li>
-</ul>
-
-
-<p>Rack is like yet another proxy/agent/adapter/.. (whatever people feel like to call such things), but for
-integration with web-servers.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -914,6 +906,10 @@ integration with web-servers.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/12/09/ror-day-25/">RoR Day 25</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/12/08/ror-day-24/">RoR Day 24</a>
         </li>
       
@@ -927,10 +923,6 @@ integration with web-servers.</p>
       
         <li>
           <a href="/blog/2013/12/06/functional-programming-1/">Functional Programming -1</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/12/06/ror-day-22/">RoR Day 22</a>
         </li>
       
     </ul>
