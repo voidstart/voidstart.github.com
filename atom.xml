@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-10T08:17:58+08:00</updated>
+  <updated>2013-12-10T09:27:43+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -22,26 +22,34 @@
 
 <p>Let me layout the gist of routing:</p>
 
-<p>User browser side:
-Request: HTTP_METHOD + URL
-HTTP_METHOD: One  of GET, POST, DELETE, PUT
-URL: Something like /products/17</p>
+<p>User browser side:</p>
 
-<p>Server side:
-Needs to decide: Controller, Action, and Params</p>
+<p>Request: HTTP_METHOD + URL</p>
 
-<p>Example:  /products/17
-&ldquo;products&rdquo; :&ndash;> Controller
-&ldquo;17&rdquo; :&ndash;> :id (of  Params)
-Now what&rsquo;s the <em>Action</em> ? (Method to call)
-Answer: Depends on <em>HTTP_METHOD</em> , which is not part of URL, but part of</p>
+<p>HTTP_METHOD: One  of GET, POST, DELETE, PUT</p>
 
-<pre><code>the underlying communication from browser. ex. GET -&gt; Show (Quite obvious)
-</code></pre>
+<p>URL: Something like /products/17</p>
 
-<p>Helpers:
-In Rails code, both URL and HTTP_METHOD for the generated link can be constructed
-in some kind of wrapper method like <code>product_path(1)</code>. This is part of Rails evolution <a href="http://stackoverflow.com/questions/1548009/rails-link-to-routes-and-nested-resources">history</a>.</p>
+<p>Server side:</p>
+
+<p>Needs to decide: Controller, Action, and Params</p>
+
+<p>Example:  /products/17</p>
+
+<p>&ldquo;products&rdquo; :&ndash;> Controller</p>
+
+<p>&ldquo;17&rdquo; :&ndash;> :id (of  Params)</p>
+
+<p>Now what&rsquo;s the <em>Action</em> ? (Method to call)</p>
+
+<p>Answer: Depends on <em>HTTP_METHOD</em> , which is not part of URL, but part of
+the underlying communication from browser. ex. GET &ndash;> Show (Quite obvious)</p>
+
+<p>Helpers:</p>
+
+<p>In Rails code, both URL and HTTP_METHOD for the generated link can be constructed</p>
+
+<p>in some kind of wrapper method like <code>product_path(1)</code>. This is part of Rails evolution <a href="http://stackoverflow.com/questions/1548009/rails-link-to-routes-and-nested-resources">history</a>.</p>
 
 <p>What&rsquo;s troubling me is it&rsquo;s fair enough to understand the explict way of just write out the URL,
 but sometimes confusing to figure out what exactly some helper would generate.</p>
