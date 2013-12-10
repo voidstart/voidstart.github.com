@@ -99,6 +99,74 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/12/10/ror-day-26/">RoR Day 26</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-10T22:43:00+08:00" pubdate data-updated="true">Dec 10<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>The subtlety of <code>build</code> method</h1>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@cart</span> <span class="o">=</span> <span class="n">current_cart</span>
+</span><span class='line'><span class="n">product</span> <span class="o">=</span> <span class="no">Product</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:product_id</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'><span class="vi">@line_item</span> <span class="o">=</span> <span class="vi">@cart</span><span class="o">.</span><span class="n">line_items</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="ss">product</span><span class="p">:</span> <span class="n">product</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> This code looks easy to understand. But from recollection, I couldn&rsquo;t have written this out,
+ because of lacking understanding of <code>build</code> method. There&rsquo;s obviously an SO <a href="http://stackoverflow.com/questions/11553824/what-exactly-is-this-rails-3-build-method-doing">question</a> regarding exactly what I
+ want to ask.</p>
+
+<p> The subtlety is that, behind the <code>build</code>, it&rsquo;s invovling the <em>class association</em> like <code>has_many</code>, <code>belongs_to</code> etc.</p>
+
+<p> Exactly how&rsquo;s the <em>association</em> involved? SO has another great <a href="http://stackoverflow.com/questions/783584/ruby-on-rails-how-do-i-use-the-active-record-build-method-in-a-belongs-to-rel">answer</a>.</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/12/09/ror-day-25/">RoR Day 25</a></h1>
     
     
@@ -850,70 +918,6 @@ memory and understanding.</p>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/03/algorithm-design-manual-1/">Algorithm Design Manual - 1</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-03T14:23:00+08:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Today I started review algorithms with <a href="http://amzn.com/0387948600?tag=a200-20">The Algorithm Design Manual</a>,
-recommended by <a href="http://codingforinterviews.com/books">Coding for interviews</a>.</p>
-
-<p>Not going to follow the step-by-step <em>&ldquo;enjoy the show&rdquo;</em> approach as <a href="http://pragprog.com/book/rails32/agile-web-development-with-rails-3-2">the agile Rails book</a>.
-I&rsquo;ll start with selected chapters/sections, and go to basics when in doubt.</p>
-
-<p>Currently I have several things for starter:</p>
-
-<ul>
-<li>Sorting</li>
-<li>Data structures of array/list/dict/queue</li>
-<li>Logorithms in Complexity Analysis</li>
-</ul>
-
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -937,6 +941,10 @@ I&rsquo;ll start with selected chapters/sections, and go to basics when in doubt
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/12/10/ror-day-26/">RoR Day 26</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/12/09/ror-day-25/">RoR Day 25</a>
         </li>
       
@@ -950,10 +958,6 @@ I&rsquo;ll start with selected chapters/sections, and go to basics when in doubt
       
         <li>
           <a href="/blog/2013/12/07/bitcoin-1/">Bitcoin - 1</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/12/06/functional-programming-1/">Functional Programming -1</a>
         </li>
       
     </ul>

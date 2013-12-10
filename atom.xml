@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-10T11:23:59+08:00</updated>
+  <updated>2013-12-10T23:13:24+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR Day 26]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/10/ror-day-26/"/>
+    <updated>2013-12-10T22:43:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/10/ror-day-26</id>
+    <content type="html"><![CDATA[<h1>The subtlety of <code>build</code> method</h1>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@cart</span> <span class="o">=</span> <span class="n">current_cart</span>
+</span><span class='line'><span class="n">product</span> <span class="o">=</span> <span class="no">Product</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:product_id</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'><span class="vi">@line_item</span> <span class="o">=</span> <span class="vi">@cart</span><span class="o">.</span><span class="n">line_items</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="ss">product</span><span class="p">:</span> <span class="n">product</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> This code looks easy to understand. But from recollection, I couldn&rsquo;t have written this out,
+ because of lacking understanding of <code>build</code> method. There&rsquo;s obviously an SO <a href="http://stackoverflow.com/questions/11553824/what-exactly-is-this-rails-3-build-method-doing">question</a> regarding exactly what I
+ want to ask.</p>
+
+<p> The subtlety is that, behind the <code>build</code>, it&rsquo;s invovling the <em>class association</em> like <code>has_many</code>, <code>belongs_to</code> etc.</p>
+
+<p> Exactly how&rsquo;s the <em>association</em> involved? SO has another great <a href="http://stackoverflow.com/questions/783584/ruby-on-rails-how-do-i-use-the-active-record-build-method-in-a-belongs-to-rel">answer</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 25]]></title>
@@ -798,38 +824,6 @@ could still go the history museums.</p>
 
 <p>In today&rsquo;s fast-food world, it becomes rarity to be something that lasts decades. Standing the
 test of time is such a beautiful property in modern times.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 10]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/24/ror-day-10/"/>
-    <updated>2013-11-24T21:12:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/24/ror-day-10</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>I18N</li>
-<li>244/476</li>
-</ul>
-
-
-<h1>&ldquo;Internationalization&rdquo;</h1>
-
-<p>Essentially, every string is a fixed value that is
-like enum. However, since texts are so easy to just
-type out, people tend to just write them out, rather
-than defining any enumeration.</p>
-
-<p>Eventually the solution is to use something like tagging,
-which is some function to return a translated version
-based on locale.</p>
-
-<p>This is kind of a unique case where a certain special
-string literal markings can be useful. In C++ world, there&rsquo;s
-a proposal for 2014 which adds physics units to the string
-literal, enabling interpretations of physics units at the
-compiler level. That could be a great inspiration for i18n.</p>
 ]]></content>
   </entry>
   

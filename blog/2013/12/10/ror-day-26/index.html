@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>RoR Day 23 - Wang Wei's Cup of Coffee</title>
+  <title>RoR Day 26 - Wang Wei's Cup of Coffee</title>
   <meta name="author" content="Wang Wei">
   <link rel="author" href="humans.txt">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,8 +13,12 @@
   
     
   
-  <meta name="description" content="The correct way to handle ForbiddenAttribute issue : Put in controller. Actually Rails 4 already
-automatically generate code which is a private &hellip;">
+  <meta name="description" content="The subtlety of build method 1
+2
+3
+@cart = current_cart
+product = Product.find(params[:product_id])
+@line_item = @cart.line_items.build(product: &hellip;">
   
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -22,18 +26,22 @@ automatically generate code which is a private &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://voidstart.github.io/blog/2013/12/07/ror-day-23/">
+  <link rel="canonical" href="http://voidstart.github.io/blog/2013/12/10/ror-day-26/">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Wang Wei's Cup of Coffee" type="application/atom+xml">
   <meta name="og:type" content="website" />
   <meta name="og:site_name" content="Wang Wei's Cup of Coffee" />
-  <meta name="og:title" content="RoR Day 23" />
-  <meta name="og:description" content="The correct way to handle ForbiddenAttribute issue : Put in controller. Actually Rails 4 already
-automatically generate code which is a private &hellip;" />
-  <meta name="og:url" content="http://voidstart.github.io/blog/2013/12/07/ror-day-23/"/>
-  <meta name="url" content="http://voidstart.github.io/blog/2013/12/07/ror-day-23/">
+  <meta name="og:title" content="RoR Day 26" />
+  <meta name="og:description" content="The subtlety of build method 1
+2
+3
+@cart = current_cart
+product = Product.find(params[:product_id])
+@line_item = @cart.line_items.build(product: &hellip;" />
+  <meta name="og:url" content="http://voidstart.github.io/blog/2013/12/10/ror-day-26/"/>
+  <meta name="url" content="http://voidstart.github.io/blog/2013/12/10/ror-day-26/">
   
   <meta name="subject" content=""/>
   <meta name="category" content=""/>
@@ -78,7 +86,7 @@ automatically generate code which is a private &hellip;" />
 
   <header>
     
-      <h1 class="entry-title">RoR Day 23</h1>
+      <h1 class="entry-title">RoR Day 26</h1>
     
     
       <p class="meta">
@@ -103,7 +111,7 @@ automatically generate code which is a private &hellip;" />
   
 
 
-<time datetime="2013-12-07T16:11:00+08:00" pubdate data-updated="true">Dec 7<span>th</span>, 2013</time> - 
+<time datetime="2013-12-10T22:43:00+08:00" pubdate data-updated="true">Dec 10<span>th</span>, 2013</time> - 
         
 
 
@@ -113,45 +121,24 @@ automatically generate code which is a private &hellip;" />
   </header>
 
 
-  <div class="entry-content"><p>The correct way to handle <code>ForbiddenAttribute</code> issue : <a href="http://stackoverflow.com/questions/17371334/how-is-attr-accessible-used-in-rails-4">Put in controller</a>. Actually Rails 4 already
-automatically generate code which is a private method to <code>permit</code> the paramters of assignment.</p>
+  <div class="entry-content"><h1>The subtlety of <code>build</code> method</h1>
 
-<p>After setting the <code>permit</code> method, things are working now.</p>
-
-<figure class='code'><figcaption><span>Generated code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="kp">private</span>
-</span><span class='line'><span class="c1"># Use callbacks to share common setup or constraints between actions.</span>
-</span><span class='line'><span class="k">def</span> <span class="nf">set_product</span>
-</span><span class='line'>  <span class="vi">@product</span> <span class="o">=</span> <span class="no">Product</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1"># Never trust parameters from the scary internet, only allow the white list through.</span>
-</span><span class='line'><span class="k">def</span> <span class="nf">product_params</span>
-</span><span class='line'>  <span class="n">params</span><span class="o">[</span><span class="ss">:product</span><span class="o">].</span><span class="n">permit</span><span class="p">(</span><span class="ss">:price</span><span class="p">,</span><span class="ss">:imgurl</span><span class="p">)</span>
-</span><span class='line'><span class="k">end</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@cart</span> <span class="o">=</span> <span class="n">current_cart</span>
+</span><span class='line'><span class="n">product</span> <span class="o">=</span> <span class="no">Product</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:product_id</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'><span class="vi">@line_item</span> <span class="o">=</span> <span class="vi">@cart</span><span class="o">.</span><span class="n">line_items</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="ss">product</span><span class="p">:</span> <span class="n">product</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Next I modified the view of the products index a bit with a bit of plain HTML table. It&rsquo;s not &ldquo;fancy&rdquo; as Depot, but functional enough for me.</p>
+<p> This code looks easy to understand. But from recollection, I couldn&rsquo;t have written this out,
+ because of lacking understanding of <code>build</code> method. There&rsquo;s obviously an SO <a href="http://stackoverflow.com/questions/11553824/what-exactly-is-this-rails-3-build-method-doing">question</a> regarding exactly what I
+ want to ask.</p>
 
-<p>Then I want the home page to show the products index, modified the route and
-it&rsquo;s a small change. At least now I know where to look for the changes when I want to do something.
-The comments in those generated files are helpful.</p>
+<p> The subtlety is that, behind the <code>build</code>, it&rsquo;s invovling the <em>class association</em> like <code>has_many</code>, <code>belongs_to</code> etc.</p>
 
-<p>Now I&rsquo;d like the <em>sidebar</em>, which I know got to do with <em>layout</em>. Then I faced the problem of writing
-css, which I basically still knows nothing about. Refer to the scss of Depot, I found out about the
-<code>float</code> attribute, which probably makes the left/right split to panes.</p>
-
-<p>There&rsquo;s a great <a href="http://www.jaceju.net/blog/archives/18/">article</a> on this.</p>
+<p> Exactly how&rsquo;s the <em>association</em> involved? SO has another great <a href="http://stackoverflow.com/questions/783584/ruby-on-rails-how-do-i-use-the-active-record-build-method-in-a-belongs-to-rel">answer</a>.</p>
 </div>
 
 
@@ -178,7 +165,7 @@ css, which I basically still knows nothing about. Refer to the scss of Depot, I 
   
 
 
-<time datetime="2013-12-07T16:11:00+08:00" pubdate data-updated="true">Dec 7<span>th</span>, 2013</time> - 
+<time datetime="2013-12-10T22:43:00+08:00" pubdate data-updated="true">Dec 10<span>th</span>, 2013</time> - 
       
 
 
@@ -192,10 +179,8 @@ css, which I basically still knows nothing about. Refer to the scss of Depot, I 
 
     
     
-      <a class="pull-left" href="/blog/2013/12/07/bitcoin-1/" title="Previous Post: Bitcoin - 1">&laquo; Bitcoin - 1</a>
+      <a class="pull-left" href="/blog/2013/12/09/ror-day-25/" title="Previous Post: RoR Day 25">&laquo; RoR Day 25</a>
     
-    
-      <a class="pull-right" href="/blog/2013/12/08/ror-day-24/" title="Next Post: RoR Day 24">RoR Day 24 &raquo;</a>
     
   </footer>
 
