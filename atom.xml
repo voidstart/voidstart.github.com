@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-10T11:12:15+08:00</updated>
+  <updated>2013-12-10T11:23:59+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -18,7 +18,7 @@
     <link href="http://voidstart.github.io/blog/2013/12/09/ror-day-25/"/>
     <updated>2013-12-09T22:40:00+08:00</updated>
     <id>http://voidstart.github.io/blog/2013/12/09/ror-day-25</id>
-    <content type="html"><![CDATA[<h1>Towards understandng of the routes</h1>
+    <content type="html"><![CDATA[<h1>Towards understanding of the routes</h1>
 
 <p>Let me layout the gist of routing:</p>
 
