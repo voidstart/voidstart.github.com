@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-Towards understandng of the routes
+Towards understanding of the routes
 =
 
 Let me layout the gist of routing:
