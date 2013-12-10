@@ -151,6 +151,32 @@ in some kind of wrapper method like <code>product_path(1)</code>. This is part o
 
 <p>What&rsquo;s troubling me is it&rsquo;s fair enough to understand the explict way of just write out the URL,
 but sometimes confusing to figure out what exactly some helper would generate.</p>
+
+<p>Take an example with:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="cp">&lt;%=</span> <span class="n">button_to</span> <span class="s2">&quot;Add to Cart&quot;</span><span class="p">,</span> <span class="n">cart_items_path</span><span class="p">(</span><span class="n">product_id</span><span class="p">:</span> <span class="n">product</span><span class="p">)</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>button_to</code> has default http method of <code>POST</code>. We look up in the table from the <a href="http://guides.rubyonrails.org/routing.html">Rails guide</a>:</p>
+
+<p><img src="/images/post_method.png" alt="Resources Routing Table" /></p>
+
+<p>Which is exactly it&rsquo;s supposed to do: create a new cart_item. The params are encoded in the URL:</p>
+
+<figure class='code'><figcaption><span>Generated HTML Code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;/cart_items?product_id=4&quot;</span> <span class="na">class=</span><span class="s">&quot;button_to&quot;</span> <span class="na">method=</span><span class="s">&quot;post&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div&gt;&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Add to Cart&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">&quot;authenticity_token&quot;</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">value=</span><span class="s">&quot;Rma+tW6nGyfn75bc3uwAi8BexhkkcsN1vl88altL6HA=&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/form&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
