@@ -138,34 +138,37 @@
 
 <p>Let me layout the gist of routing:</p>
 
-<p>User browser side:</p>
+<h2>User browser side:</h2>
 
-<p>Request: HTTP_METHOD + URL</p>
+<ul>
+<li>Request: <code>HTTP_METHOD</code> + <code>URL</code></li>
+<li><code>HTTP_METHOD</code>: One  of <code>GET</code>, <code>POST</code>, <code>DELETE</code>, <code>PUT</code></li>
+<li><code>URL</code>: Something like <code>/products/17</code></li>
+</ul>
 
-<p>HTTP_METHOD: One  of GET, POST, DELETE, PUT</p>
 
-<p>URL: Something like /products/17</p>
+<h2>Server side:</h2>
 
-<p>Server side:</p>
+<ul>
+<li>Needs to decide: Controller, Action, and Params</li>
+</ul>
 
-<p>Needs to decide: Controller, Action, and Params</p>
 
-<p>Example:  /products/17</p>
+<h2>Example:  <code>/products/17</code></h2>
 
-<p>&ldquo;products&rdquo; :&ndash;> Controller</p>
+<ul>
+<li>&ldquo;products&rdquo; :&ndash;> Controller</li>
+<li>&ldquo;17&rdquo; :&ndash;> :id (of  Params)</li>
+<li>Now what&rsquo;s the <em>Action</em> ? (Method to call)
+Answer: Depends on <em>HTTP_METHOD</em> , which is not part of URL, but part of
+the underlying communication from browser. ex. GET &ndash;> Show (Quite obvious)</li>
+</ul>
 
-<p>&ldquo;17&rdquo; :&ndash;> :id (of  Params)</p>
 
-<p>Now what&rsquo;s the <em>Action</em> ? (Method to call)</p>
+<h2>Helpers:</h2>
 
-<p>Answer: Depends on <em>HTTP_METHOD</em> , which is not part of URL, but part of
-the underlying communication from browser. ex. GET &ndash;> Show (Quite obvious)</p>
-
-<p>Helpers:</p>
-
-<p>In Rails code, both URL and HTTP_METHOD for the generated link can be constructed</p>
-
-<p>in some kind of wrapper method like <code>product_path(1)</code>. This is part of Rails evolution <a href="http://stackoverflow.com/questions/1548009/rails-link-to-routes-and-nested-resources">history</a>.</p>
+<p>In Rails code, both <code>URL</code> and <code>HTTP_METHOD</code> for the generated link can be constructed
+in some kind of wrapper method like <code>product_path(1)</code>. This is part of Rails <a href="http://stackoverflow.com/questions/1548009/rails-link-to-routes-and-nested-resources">evolution history</a>.</p>
 
 <p>What&rsquo;s troubling me is it&rsquo;s fair enough to understand the explict way of just write out the URL,
 but sometimes confusing to figure out what exactly some helper would generate.</p>
