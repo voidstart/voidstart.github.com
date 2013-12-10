@@ -1,0 +1,22 @@
+---
+layout: post
+title: "RoR Day 26"
+date: 2013-12-10 22:43
+comments: true
+categories: 
+---
+
+The subtlety of `build` method
+=
+``` ruby
+@cart = current_cart
+product = Product.find(params[:product_id])
+@line_item = @cart.line_items.build(product: product)
+```
+ This code looks easy to understand. But from recollection, I couldn't have written this out,
+ because of lacking understanding of `build` method. There's obviously an SO [question](http://stackoverflow.com/questions/11553824/what-exactly-is-this-rails-3-build-method-doing) regarding exactly what I
+ want to ask.
+
+ The subtlety is that, behind the `build`, it's invovling the _class association_ like `has_many`, `belongs_to` etc.
+
+ Exactly how's the _association_ involved? SO has another great [answer](http://stackoverflow.com/questions/783584/ruby-on-rails-how-do-i-use-the-active-record-build-method-in-a-belongs-to-rel).
