@@ -37,3 +37,23 @@ in some kind of wrapper method like `product_path(1)`. This is part of Rails [ev
 
 What's troubling me is it's fair enough to understand the explict way of just write out the URL,
 but sometimes confusing to figure out what exactly some helper would generate.
+
+Take an example with:
+
+``` erb
+<%= button_to "Add to Cart", cart_items_path(product_id: product) %>
+```
+
+`button_to` has default http method of `POST`. We look up in the table from the [Rails guide](http://guides.rubyonrails.org/routing.html):
+
+![Resources Routing Table](/images/post_method.png)
+
+Which is exactly it's supposed to do: create a new cart_item. The params are encoded in the URL:
+
+``` html Generated HTML Code
+<form action="/cart_items?product_id=4" class="button_to" method="post">
+	<div><input type="submit" value="Add to Cart" />
+		<input name="authenticity_token" type="hidden" value="Rma+tW6nGyfn75bc3uwAi8BexhkkcsN1vl88altL6HA=" />
+	</div>
+</form>
+```
