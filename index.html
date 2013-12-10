@@ -138,32 +138,26 @@
 
 <p>Let me layout the gist of routing:</p>
 
-<p>User browser side:</p>
-
-<pre><code>Request: HTTP_METHOD + URL
+<p>User browser side:
+Request: HTTP_METHOD + URL
 HTTP_METHOD: One  of GET, POST, DELETE, PUT
-URL: Something like /products/17
+URL: Something like /products/17</p>
+
+<p>Server side:
+Needs to decide: Controller, Action, and Params</p>
+
+<p>Example:  /products/17
+&ldquo;products&rdquo; :&ndash;> Controller
+&ldquo;17&rdquo; :&ndash;> :id (of  Params)
+Now what&rsquo;s the <em>Action</em> ? (Method to call)
+Answer: Depends on <em>HTTP_METHOD</em> , which is not part of URL, but part of</p>
+
+<pre><code>the underlying communication from browser. ex. GET -&gt; Show (Quite obvious)
 </code></pre>
 
-<p>Server side:</p>
-
-<pre><code>Needs to decide: Controller, Action, and Params
-</code></pre>
-
-<p>Example:  /products/17</p>
-
-<pre><code>"products" :-&gt; Controller
-"17" :-&gt; :id (of  Params)
-Now what's the _Action_ ? (Method to call)
-Answer: Depends on _HTTP_METHOD_ , which is not part of URL, but part of
-    the underlying communication from browser. ex. GET -&gt; Show (Quite obvious)
-</code></pre>
-
-<p>Helpers:</p>
-
-<pre><code>In Rails code, both URL and HTTP_METHOD for the generated link can be constructed
-in some kind of wrapper method like `product_path(1)`. This is part of Rails evolution [history](http://stackoverflow.com/questions/1548009/rails-link-to-routes-and-nested-resources).
-</code></pre>
+<p>Helpers:
+In Rails code, both URL and HTTP_METHOD for the generated link can be constructed
+in some kind of wrapper method like <code>product_path(1)</code>. This is part of Rails evolution <a href="http://stackoverflow.com/questions/1548009/rails-link-to-routes-and-nested-resources">history</a>.</p>
 
 <p>What&rsquo;s troubling me is it&rsquo;s fair enough to understand the explict way of just write out the URL,
 but sometimes confusing to figure out what exactly some helper would generate.</p>
