@@ -41,6 +41,6 @@ JQuery
 The book appears to be a little out of date, since the gem of jquery has moved the jquery-ui part
 out to be another standalone gem called `jquery-ui-rails`, no longer part of `jquery-rails`.
 
-With jquery, I am some difficulty of getting the css highlighting effect working. Ajax-y adding
+With jquery, I am having some difficulty in getting the css highlighting effect to work. Ajax-ly adding
 items to cart works, but not with the css animation effect. When I tried to enable the css animate
-code, it even broke the already working ajax-y update of cart.
+code, it even broke the already working ajax-ly update of cart.
