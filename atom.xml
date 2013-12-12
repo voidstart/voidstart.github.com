@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-10T23:13:24+08:00</updated>
+  <updated>2013-12-12T20:21:17+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR - 27]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/12/ror-27/"/>
+    <updated>2013-12-12T19:51:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/12/ror-27</id>
+    <content type="html"><![CDATA[<h1>New numbering</h1>
+
+<p>Yesterday I took a day off, so I guess the day counting could stop.
+But I still decided to keep the article count. Now 27th of the Ruby on Rails series.</p>
+
+<h1>Workflow</h1>
+
+<p>I continue to build the Depot clone on my own, but I realize that going from 100%
+on the book to 0% is too hard, making me get lost too often too quickly.
+Sometimes not even sure what to search for on Google.
+So I went back to the book for pointers and ideas, and then go implement without
+typing against the book&rsquo;s code as I did for the first read.</p>
+
+<p>With such workflow, my code works most of the time, but occationally I still need
+the book to get on track. This time at least I have a feeling of where to write
+stuff for which things, at the back of my head. That&rsquo;s a good thing.
+I guess it&rsquo;s just normal to get confusion from a such a <em>magical</em> framework like Rails.</p>
+
+<h1>Migration</h1>
+
+<p>My db migrations often went incomplete the first try. I had to do multiple migrations
+to get and understand what in the book was just one whole migration.</p>
+
+<h1>Styling</h1>
+
+<p>I skipped much of the not-so-fancy css styling from the book, but start with overly simplistic
+styling <em>which I understand</em>. Then, improve with effects as I find the look more unsatifying.
+This has been a good process to learn css/scss, as I can observe each effect immediately and
+separately.</p>
+
+<h1>JQuery</h1>
+
+<p>The book appears to be a little out of date, since the gem of jquery has moved the jquery-ui part
+out to be another standalone gem called <code>jquery-ui-rails</code>, no longer part of <code>jquery-rails</code>.</p>
+
+<p>With jquery, I am some difficulty of getting the css highlighting effect working. Ajax-y adding
+items to cart works, but not with the css animation effect. When I tried to enable the css animate
+code, it even broke the already working ajax-y update of cart.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR Day 26]]></title>
@@ -788,42 +834,6 @@ things and putting things somewhere. Conventions make those no brainers.</p>
 <p>Request and state is particular for web development. The server and client
 communicates by requests one at a time. To pass on the conversation across
 requests, state must be maintained.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 11]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/25/ror-day-11/"/>
-    <updated>2013-11-25T20:59:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/25/ror-day-11</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>Deployment</li>
-<li>264/476</li>
-</ul>
-
-
-<h1>&ldquo;Production qualified&rdquo;</h1>
-
-<p>There seems to be always a need to make the testing
-environment as simple as possible, for the benefit of quick looping
-in experimentation. For real world, however, the priority has changed.
-The performance becomes first order, and changes are slow.</p>
-
-<p>The root reason being stability and speed. For any product, it is important to maintain the balance
-between delivering a stable, dependenable expectations, and the need
-for new functions.</p>
-
-<p>Take it further, it&rsquo;s the difference of existing function and wanted function that matter. If the
-need for new/better function outweighs the stability of existing ones, things need to go faster.</p>
-
-<p>In Linux, there&rsquo;s the rule of never break the user&rsquo;s code, respect total backwards compatibility.
-Only after years of obsoletion a supported feature could be deleted. Even so, such old products
-could still go the history museums.</p>
-
-<p>In today&rsquo;s fast-food world, it becomes rarity to be something that lasts decades. Standing the
-test of time is such a beautiful property in modern times.</p>
 ]]></content>
   </entry>
   
