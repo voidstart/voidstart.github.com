@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-12T20:46:23+08:00</updated>
+  <updated>2013-12-12T20:48:22+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -65,8 +65,8 @@ Guess moments like this is when I should start hating dynamic languages without 
 
 <figure class='code'><figcaption><span>The wrong code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="x">$(&#39;#newly_item&#39;).css(&#39;background-color&#39;:&#39;#FF00FF&#39;)</span>
-</span><span class='line'><span class="x">.animate({&#39;background-color&#39;:&#39;#FFFFFF&#39;},1000);</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#newly_item&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;background-color&#39;</span><span class="o">:</span><span class="s1">&#39;#FF00FF&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="p">.</span><span class="nx">animate</span><span class="p">({</span><span class="s1">&#39;background-color&#39;</span><span class="o">:</span><span class="s1">&#39;#FFFFFF&#39;</span><span class="p">},</span><span class="mi">1000</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -74,10 +74,12 @@ Guess moments like this is when I should start hating dynamic languages without 
 
 <figure class='code'><figcaption><span>The corrected code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="x">$(&#39;#newly_item&#39;).css({&#39;background-color&#39;:&#39;#FF00FF&#39;})</span>
-</span><span class='line'><span class="x">.animate({&#39;background-color&#39;:&#39;#FFFFFF&#39;},1000);</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#newly_item&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span><span class="s1">&#39;background-color&#39;</span><span class="o">:</span><span class="s1">&#39;#FF00FF&#39;</span><span class="p">})</span>
+</span><span class='line'><span class="p">.</span><span class="nx">animate</span><span class="p">({</span><span class="s1">&#39;background-color&#39;</span><span class="o">:</span><span class="s1">&#39;#FFFFFF&#39;</span><span class="p">},</span><span class="mi">1000</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p>See the difference? ;D</p>
 ]]></content>
   </entry>
   
