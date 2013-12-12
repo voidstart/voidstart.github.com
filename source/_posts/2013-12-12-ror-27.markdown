@@ -50,13 +50,15 @@ but it never caught my eye for like half an hour. What's worse, there's no error
 Guess moments like this is when I should start hating dynamic languages without proper type checking?
 
 Wrong code:
-``` erb The wrong code
+``` javascript The wrong code
 $('#newly_item').css('background-color':'#FF00FF')
 .animate({'background-color':'#FFFFFF'},1000);
 ```
 
 Correct code:
-``` erb The corrected code
+``` javascript The corrected code
 $('#newly_item').css({'background-color':'#FF00FF'})
 .animate({'background-color':'#FFFFFF'},1000);
 ```
+
+See the difference? ;D
