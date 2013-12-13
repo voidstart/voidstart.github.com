@@ -1,0 +1,25 @@
+---
+layout: post
+title: "RoR - 28"
+date: 2013-12-13 23:21
+comments: true
+categories: 
+---
+
+Whitelist vs blacklist
+=
+It's clever as a security design to disable everything first, then
+only when needed, add whitelistings for things that do need direct
+access without authentication.
+
+I first thought the authentication should be put in the models, because
+no matter how the top structure may be complex to control, the gatekeeper
+should be at the last defence for the database.
+
+Turns out I was wrong. In Rails, the super class of all controller could
+be used as the central location of access before all other smaller logic
+units.
+
+I am still not sure an _admin page_ to "welcome" is really needed as the
+books says. I am just looking to guard existing functionality with user
+authentication.
