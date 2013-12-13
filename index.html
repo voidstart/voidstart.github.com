@@ -99,6 +99,73 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/12/13/ror-28/">RoR - 28</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-13T23:21:00+08:00" pubdate data-updated="true">Dec 13<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Whitelist vs blacklist</h1>
+
+<p>It&rsquo;s clever as a security design to disable everything first, then
+only when needed, add whitelistings for things that do need direct
+access without authentication.</p>
+
+<p>I first thought the authentication should be put in the models, because
+no matter how the top structure may be complex to control, the gatekeeper
+should be at the last defence for the database.</p>
+
+<p>Turns out I was wrong. In Rails, the super class of all controller could
+be used as the central location of access before all other smaller logic
+units.</p>
+
+<p>I am still not sure an <em>admin page</em> to &ldquo;welcome&rdquo; is really needed as the
+books says. I am just looking to guard existing functionality with user
+authentication.</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/12/12/ror-27/">RoR - 27</a></h1>
     
     
@@ -855,81 +922,6 @@ is not obvious to the mind, had to look it up.</p>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/04/algorithm-design-manual-2/">Algorithm Design Manual - 2</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-04T22:51:00+08:00" pubdate data-updated="true">Dec 4<span>th</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I thought I&rsquo;d just start to warm up myself by writing some sorting
-algorithm.</p>
-
-<p>At first, I thought to first write some random generator for testing usage. Then
-I realized that&rsquo;s not the goal, to compare each algo with different types of inputs.
-I am just trying to implement <em>correct</em> sorting. The performance, code compactness,
-caching all are not my concerns. So the result is hardcoded <em>random</em> input, and I
-will print the whole array after each <em>pass</em> or interation (after swap etc), to
-observe the <em>sorting process</em> and final sorted array.</p>
-
-<p>I did from scatch the bubble, insertion, selection and merge sort. Turns out it&rsquo;s
-not easy to get right the first try even for such simple algorithm. My errors mostly
-on index off by 1, edge cases. Time spent mostly on thinking the <em>sorted</em> vs the <em>unsorted</em> part,
-and their transition. Direction, index, temps are most concerned.</p>
-
-<p>It&rsquo;s good excercise.</p>
-
-<p>I review some other things besides this:</p>
-
-<ul>
-<li>the spiral rule of c++ declaraions</li>
-<li>c++ quiz quesions (includes some c++ 11 stuff)</li>
-<li>stack and queues</li>
-</ul>
-
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -953,6 +945,10 @@ and their transition. Direction, index, temps are most concerned.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/12/13/ror-28/">RoR - 28</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/12/12/ror-27/">RoR - 27</a>
         </li>
       
@@ -966,10 +962,6 @@ and their transition. Direction, index, temps are most concerned.</p>
       
         <li>
           <a href="/blog/2013/12/08/ror-day-24/">RoR Day 24</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/12/07/ror-day-23/">RoR Day 23</a>
         </li>
       
     </ul>

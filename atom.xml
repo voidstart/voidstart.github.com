@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-12T20:48:22+08:00</updated>
+  <updated>2013-12-13T23:28:08+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR - 28]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/13/ror-28/"/>
+    <updated>2013-12-13T23:21:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/13/ror-28</id>
+    <content type="html"><![CDATA[<h1>Whitelist vs blacklist</h1>
+
+<p>It&rsquo;s clever as a security design to disable everything first, then
+only when needed, add whitelistings for things that do need direct
+access without authentication.</p>
+
+<p>I first thought the authentication should be put in the models, because
+no matter how the top structure may be complex to control, the gatekeeper
+should be at the last defence for the database.</p>
+
+<p>Turns out I was wrong. In Rails, the super class of all controller could
+be used as the central location of access before all other smaller logic
+units.</p>
+
+<p>I am still not sure an <em>admin page</em> to &ldquo;welcome&rdquo; is really needed as the
+books says. I am just looking to guard existing functionality with user
+authentication.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR - 27]]></title>
@@ -811,53 +836,6 @@ Just an amazing stack.</p>
 <li>Describe the style of that element (font,color,size,margin..)</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 12]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/26/ror-day-12/"/>
-    <updated>2013-11-26T20:46:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/26/ror-day-12</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>Review what I have learn (Retrospective)</li>
-<li>268/476</li>
-</ul>
-
-
-<h1>&ldquo;Retrospective&rdquo;</h1>
-
-<p>In retrospect, there are several things that are quite fresh to me.</p>
-
-<ul>
-<li>MVC thinking</li>
-<li>Template transformation ( erb &ndash;> html, js &hellip; )</li>
-<li>Ruby block</li>
-<li>Pervasive conventions over configuration</li>
-<li>Request and State</li>
-</ul>
-
-
-<p>MVC makes the parts of the app easily separated, easy to find what
-goes where and reason about.</p>
-
-<p>Transformations from embedded ruby
-to other sources are the bridge to generate web pages according to
-states, including db and user interactions.</p>
-
-<p>Ruby block shows first order functions, and provides a new way of
-thinking about code and behavior. We can pass behaviors around and attach
-to another behavior or data.</p>
-
-<p>Conventions make a lot things easier. A lot of hard questions are not
-about figuring out how to do, but just choose something, like naming
-things and putting things somewhere. Conventions make those no brainers.</p>
-
-<p>Request and state is particular for web development. The server and client
-communicates by requests one at a time. To pass on the conversation across
-requests, state must be maintained.</p>
 ]]></content>
   </entry>
   

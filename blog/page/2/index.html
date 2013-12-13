@@ -99,6 +99,81 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/12/04/algorithm-design-manual-2/">Algorithm Design Manual - 2</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-04T22:51:00+08:00" pubdate data-updated="true">Dec 4<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I thought I&rsquo;d just start to warm up myself by writing some sorting
+algorithm.</p>
+
+<p>At first, I thought to first write some random generator for testing usage. Then
+I realized that&rsquo;s not the goal, to compare each algo with different types of inputs.
+I am just trying to implement <em>correct</em> sorting. The performance, code compactness,
+caching all are not my concerns. So the result is hardcoded <em>random</em> input, and I
+will print the whole array after each <em>pass</em> or interation (after swap etc), to
+observe the <em>sorting process</em> and final sorted array.</p>
+
+<p>I did from scatch the bubble, insertion, selection and merge sort. Turns out it&rsquo;s
+not easy to get right the first try even for such simple algorithm. My errors mostly
+on index off by 1, edge cases. Time spent mostly on thinking the <em>sorted</em> vs the <em>unsorted</em> part,
+and their transition. Direction, index, temps are most concerned.</p>
+
+<p>It&rsquo;s good excercise.</p>
+
+<p>I review some other things besides this:</p>
+
+<ul>
+<li>the spiral rule of c++ declaraions</li>
+<li>c++ quiz quesions (includes some c++ 11 stuff)</li>
+<li>stack and queues</li>
+</ul>
+
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/12/04/ror-day-20/">RoR Day 20</a></h1>
     
     
@@ -855,95 +930,6 @@ Just an amazing stack.</p>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/26/ror-day-12/">RoR Day 12</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-26T20:46:00+08:00" pubdate data-updated="true">Nov 26<span>th</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Progress</h1>
-
-<ul>
-<li>Review what I have learn (Retrospective)</li>
-<li>268/476</li>
-</ul>
-
-
-<h1>&ldquo;Retrospective&rdquo;</h1>
-
-<p>In retrospect, there are several things that are quite fresh to me.</p>
-
-<ul>
-<li>MVC thinking</li>
-<li>Template transformation ( erb &ndash;> html, js &hellip; )</li>
-<li>Ruby block</li>
-<li>Pervasive conventions over configuration</li>
-<li>Request and State</li>
-</ul>
-
-
-<p>MVC makes the parts of the app easily separated, easy to find what
-goes where and reason about.</p>
-
-<p>Transformations from embedded ruby
-to other sources are the bridge to generate web pages according to
-states, including db and user interactions.</p>
-
-<p>Ruby block shows first order functions, and provides a new way of
-thinking about code and behavior. We can pass behaviors around and attach
-to another behavior or data.</p>
-
-<p>Conventions make a lot things easier. A lot of hard questions are not
-about figuring out how to do, but just choose something, like naming
-things and putting things somewhere. Conventions make those no brainers.</p>
-
-<p>Request and state is particular for web development. The server and client
-communicates by requests one at a time. To pass on the conversation across
-requests, state must be maintained.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -971,6 +957,10 @@ requests, state must be maintained.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/12/13/ror-28/">RoR - 28</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/12/12/ror-27/">RoR - 27</a>
         </li>
       
@@ -984,10 +974,6 @@ requests, state must be maintained.</p>
       
         <li>
           <a href="/blog/2013/12/08/ror-day-24/">RoR Day 24</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/12/07/ror-day-23/">RoR Day 23</a>
         </li>
       
     </ul>
