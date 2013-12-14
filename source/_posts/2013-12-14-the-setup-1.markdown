@@ -1,0 +1,43 @@
+---
+layout: post
+title: "The Setup - 1"
+date: 2013-12-14 22:33
+comments: true
+categories: 
+---
+
+Human Interface
+=
+
+Mouse has been around for about 30 to 40 years. 
+Keyboards are even older than that, since the ages of typewriter, before computers.
+Still, they are the most common human interface around today.
+
+Touch screen has come along, but pretty much only used on smaller screens like phones.
+Most recently, there's been some utilization of body language due to advancement of
+sensors and computer vision.  That's about it about human interface.
+
+I love the keyboard much, primarily because of it's faster than mouse in many cases.
+The most important reason is that, pressing a keyboard shortcut needs less finger movement,
+and only cost about 0.1 to 0.2 seconds. Plus, keyboard has a large vocabulary, many commands
+can be issued from keyboard. Contract to mouse, which has 2 to 5 keys and pointer device.
+
+Mouse is great at selecting things, much more accurate and intuitive. So occationally, or
+when commands are not at hand, mouse is better.
+
+My setup around keyboard
+=
+- Blackwidow mechanical keyboard
+- Macros using Synapse 2.0 to activate common apps. No more `cmd + tab`, one key to one app.
+For this, I map F15 to F19 to Firefox, Sublime, Chrome, iTerm and Preview for pdf reading.
+- Use `slate` app to do window management, so I can maximize, left-half, right-half the screen
+with just one key.
+- Use `Alfred` to launch less often used apps.
+- Use Vim, Sublime, iTerm, and be familiar with the common shortcuts.
+- In Firefox, use vimperator; in Chrome, use Vimium.
+- Disable Capslock, use KeyboardHackForMac to make it a `control` when pressed long, a `ESC` when pressed short time.
+- `ESC` is mapped to a window layout
+- left/right shift mapped to `(` and `)` when pressed short.
+- Left `control` mapped to a _super meta_, which is `ctrl+shift+cmd+option`
+
+
