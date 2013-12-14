@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-13T23:28:08+08:00</updated>
+  <updated>2013-12-14T23:06:30+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Setup - 1]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/14/the-setup-1/"/>
+    <updated>2013-12-14T22:33:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/14/the-setup-1</id>
+    <content type="html"><![CDATA[<h1>Human Interface</h1>
+
+<p>Mouse has been around for about 30 to 40 years.
+Keyboards are even older than that, since the ages of typewriter, before computers.
+Still, they are the most common human interface around today.</p>
+
+<p>Touch screen has come along, but pretty much only used on smaller screens like phones.
+Most recently, there&rsquo;s been some utilization of body language due to advancement of
+sensors and computer vision.  That&rsquo;s about it about human interface.</p>
+
+<p>I love the keyboard much, primarily because of it&rsquo;s faster than mouse in many cases.
+The most important reason is that, pressing a keyboard shortcut needs less finger movement,
+and only cost about 0.1 to 0.2 seconds. Plus, keyboard has a large vocabulary, many commands
+can be issued from keyboard. Contract to mouse, which has 2 to 5 keys and pointer device.</p>
+
+<p>Mouse is great at selecting things, much more accurate and intuitive. So occationally, or
+when commands are not at hand, mouse is better.</p>
+
+<h1>My setup around keyboard</h1>
+
+<ul>
+<li>Blackwidow mechanical keyboard</li>
+<li>Macros using Synapse 2.0 to activate common apps. No more <code>cmd + tab</code>, one key to one app.
+For this, I map F15 to F19 to Firefox, Sublime, Chrome, iTerm and Preview for pdf reading.</li>
+<li>Use <code>slate</code> app to do window management, so I can maximize, left-half, right-half the screen
+with just one key.</li>
+<li>Use <code>Alfred</code> to launch less often used apps.</li>
+<li>Use Vim, Sublime, iTerm, and be familiar with the common shortcuts.</li>
+<li>In Firefox, use vimperator; in Chrome, use Vimium.</li>
+<li>Disable Capslock, use KeyboardHackForMac to make it a <code>control</code> when pressed long, a <code>ESC</code> when pressed short time.</li>
+<li><code>ESC</code> is mapped to a window layout</li>
+<li>left/right shift mapped to <code>(</code> and <code>)</code> when pressed short.</li>
+<li>Left <code>control</code> mapped to a <em>super meta</em>, which is <code>ctrl+shift+cmd+option</code></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RoR - 28]]></title>
@@ -798,44 +841,6 @@ printed, designed by human. The logic paths are thought first by a human, then c
 into recipes for the execution loop.</p>
 
 <p>Perhaps I should look at machine learning courses for some inspirations.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 13]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/27/ror-day-13/"/>
-    <updated>2013-11-27T23:04:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/27/ror-day-13</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>Continue Review</li>
-<li>268/476</li>
-</ul>
-
-
-<h1>&ldquo;Ajax, Javascript, Css&rdquo;</h1>
-
-<p>This is not something much about Ruby or Rails, just web dev
-in general.</p>
-
-<p>Ajax allows interaction without page reload. A request still happens
-in the background, but only partical page is obtained. DOM tree largely
-remains the same, but part of the tree got replaced.</p>
-
-<p>Javascript is the language used to manipulate the DOM tree, and such
-code sources need to be adaptive to content, too. Thus, we could again
-use Ruby to generate JS code from templates, just like html pages.
-We ends up with: use ruby to do js, use js to do html, use html to do page.
-Just an amazing stack.</p>
-
-<p>Css is the language to do styling via several things:</p>
-
-<ul>
-<li>Identify some elements in the DOM (via class, id)</li>
-<li>Describe the style of that element (font,color,size,margin..)</li>
-</ul>
-
 ]]></content>
   </entry>
   
