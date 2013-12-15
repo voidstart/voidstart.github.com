@@ -25,7 +25,7 @@ can be issued from keyboard. Contract to mouse, which has 2 to 5 keys and pointe
 Mouse is great at selecting things, much more accurate and intuitive. So occationally, or
 when commands are not at hand, mouse is better.
 
-My setup around keyboard
+My setup with keyboard
 =
 - Blackwidow mechanical keyboard
 - Macros using Synapse 2.0 to activate common apps. No more `cmd + tab`, one key to one app.
