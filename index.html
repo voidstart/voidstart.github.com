@@ -99,6 +99,80 @@
 
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/12/17/ror-29/">RoR - 29</a></h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-17T16:16:00+08:00" pubdate data-updated="true">Dec 17<span>th</span>, 2013</time> - 
+        
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Persistance</h1>
+
+<p>When writing the Depot clone, I didn&rsquo;t give much thought on
+whether a thing is backed by database or not. Turns out this
+is very important.</p>
+
+<p>I am working on the checkout after I did the login. Thought
+it should be easy. But then I didn&rsquo;t start by creating an order
+scaffold, rather, I thought the cart would do much of the work.
+Since I could just print the cart out for the checkout page, and
+do some fake payment option in the view just to get started for
+later, when I would really look into creating the payment receiving
+part.</p>
+
+<p>Well, I was wrong. The order controller is very much needed, since although
+the cart has the &ldquo;billing list&rdquo; of items, they don&rsquo;t <em>persist</em>.
+Carts are attached to sessions, and could be gone after timeout.
+Once going to the payment, they should be inside the database
+to be persisted. At first I thought maybe I can refernce the cart_id, ha,
+nope. The cart doesn&rsquo;t persist, so the cart_id doesn&rsquo;t make sense.
+So I should just copy the cart&rsquo;s contents over, duplicate in the order,
+and then save it? Seems extra work.</p>
+
+<p>I&rsquo;ll take a look back into the book&rsquo;s approach.</p>
+</div>
+  
+  
+
+
+</div>
+
+      </article>
+    
+    
+      <article class="span4">
+        <div class="article-format">
+
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/12/14/the-setup-1/">The Setup - 1</a></h1>
     
     
@@ -871,79 +945,6 @@ productive, but just stiching tings up.</li>
 
       </article>
     
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/12/06/ror-day-22/">RoR Day 22</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Wang Wei</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-12-06T14:39:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Learning without understanding doesn&rsquo;t last in memory. Just I tried to
-do something simple as add a few columns and update their values on my own.
-I got into the error of &ldquo;Forbidden attributes&rdquo;. It appears to be related
-to <a href="http://blog.xdite.net/posts/2012/03/05/github-hacked-rails-security/">mass assignment problem</a>.</p>
-
-<p>The thing with understanding such a problem, is that the level of abstraction
-is a bit high. To think <em>natively</em> on this, what exactly doesn&rsquo;t work?</p>
-
-<p>A http request doesn&rsquo;t trigger what it suppose to do, instead it returns a page generated
-by Rails displaying the <em>error trace</em>. To a stranger with reasonable intelligence, this is like
-non-sense. Leave me with either <em>Google it</em> or search for a clue in my mind. If I then
-start to read the source codes of the trace, it will be overwhelming information, which 99% I don&rsquo;t
-care for the problem at hand. My mind has some vague clue that this probably has something to do
-with <em>Edit</em> &ldquo;action&rdquo; of &ldquo;product&rdquo; ActiveRecord, which involves model,database,controller, if more
-unlikely web server request/response, or other parts of Rails.</p>
-
-<p>Google is a helpful friend here, directing me to suspect the &ldquo;mass assignment&rdquo; problem that once
-in history got Github hacked. It has been a while, so modern Rails probably adapted and make
-security <a href="http://net.tutsplus.com/tutorials/ruby/mass-assignment-rails-and-you/">precautions</a> that by default bans certain <code>update</code> function, causing this error.
-One of the link suggusts DHH has some Gist to <a href="https://gist.github.com/dhh/1975644">demo</a> a way of resolution.</p>
-
-<p>I&rsquo;m still making sense of all this. In the meantime, I continue to play with building the small
-book store app.</p>
-</div>
-  
-  
-
-
-</div>
-
-      </article>
-    
     </div>
       <div class="row">
         <ul class="pager">
@@ -967,6 +968,10 @@ book store app.</p>
     <ul class="recent_posts">
       
         <li>
+          <a href="/blog/2013/12/17/ror-29/">RoR - 29</a>
+        </li>
+      
+        <li>
           <a href="/blog/2013/12/14/the-setup-1/">The Setup - 1</a>
         </li>
       
@@ -980,10 +985,6 @@ book store app.</p>
       
         <li>
           <a href="/blog/2013/12/10/ror-day-26/">RoR Day 26</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/12/09/ror-day-25/">RoR Day 25</a>
         </li>
       
     </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Wang Wei's Cup of Coffee]]></title>
   <link href="http://voidstart.github.io/atom.xml" rel="self"/>
   <link href="http://voidstart.github.io/"/>
-  <updated>2013-12-15T22:40:03+08:00</updated>
+  <updated>2013-12-17T17:25:07+08:00</updated>
   <id>http://voidstart.github.io/</id>
   <author>
     <name><![CDATA[Wang Wei]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RoR - 29]]></title>
+    <link href="http://voidstart.github.io/blog/2013/12/17/ror-29/"/>
+    <updated>2013-12-17T16:16:00+08:00</updated>
+    <id>http://voidstart.github.io/blog/2013/12/17/ror-29</id>
+    <content type="html"><![CDATA[<h1>Persistance</h1>
+
+<p>When writing the Depot clone, I didn&rsquo;t give much thought on
+whether a thing is backed by database or not. Turns out this
+is very important.</p>
+
+<p>I am working on the checkout after I did the login. Thought
+it should be easy. But then I didn&rsquo;t start by creating an order
+scaffold, rather, I thought the cart would do much of the work.
+Since I could just print the cart out for the checkout page, and
+do some fake payment option in the view just to get started for
+later, when I would really look into creating the payment receiving
+part.</p>
+
+<p>Well, I was wrong. The order controller is very much needed, since although
+the cart has the &ldquo;billing list&rdquo; of items, they don&rsquo;t <em>persist</em>.
+Carts are attached to sessions, and could be gone after timeout.
+Once going to the payment, they should be inside the database
+to be persisted. At first I thought maybe I can refernce the cart_id, ha,
+nope. The cart doesn&rsquo;t persist, so the cart_id doesn&rsquo;t make sense.
+So I should just copy the cart&rsquo;s contents over, duplicate in the order,
+and then save it? Seems extra work.</p>
+
+<p>I&rsquo;ll take a look back into the book&rsquo;s approach.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Setup - 1]]></title>
@@ -804,43 +836,6 @@ for graphing and data mining purposes.</p>
 <p>Why cannot all these be some kind of plugins that could be easily enabled by installation with
 a package manager. If the structure is well thought of to enable such reliable extension, there
 really should be no reason of why it can&rsquo;t be done.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RoR Day 14]]></title>
-    <link href="http://voidstart.github.io/blog/2013/11/28/ror-day-14/"/>
-    <updated>2013-11-28T21:58:00+08:00</updated>
-    <id>http://voidstart.github.io/blog/2013/11/28/ror-day-14</id>
-    <content type="html"><![CDATA[<h1>Progress</h1>
-
-<ul>
-<li>Practice the Playtime tasks</li>
-<li>286/476</li>
-</ul>
-
-
-<h1>&ldquo;Playtime&rdquo;</h1>
-
-<p>Following the book to write the app is straightforward, since everything
-is detailed explained.</p>
-
-<p>Playtime is the section without the answers explained, but only the questions given.
-I had struggled with some of the questions for quite some time.</p>
-
-<p>So far I have done all the playtime by myself and many of the errors I made are
-caused by misunderstanding and carelessness. Through Googling and re-examining
-the source codes, eventually the issue will settle.</p>
-
-<p>The hard part about development is sometimes the error message just does not make
-sense, you have to apply intuition, play and compare and ask good questions. This
-is ultimately about the gap between computer and human, imagine if computer can
-figure out all the underlying issues of why something does not work and print
-the exact issue right in front of you. Everything is just like cooking recipe, even the error
-printed, designed by human. The logic paths are thought first by a human, then coded
-into recipes for the execution loop.</p>
-
-<p>Perhaps I should look at machine learning courses for some inspirations.</p>
 ]]></content>
   </entry>
   
