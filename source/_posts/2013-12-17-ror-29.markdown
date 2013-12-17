@@ -1,0 +1,32 @@
+---
+layout: post
+title: "RoR - 29"
+date: 2013-12-17 16:16
+comments: true
+categories: 
+---
+
+Persistance
+=
+When writing the Depot clone, I didn't give much thought on
+whether a thing is backed by database or not. Turns out this
+is very important.
+
+I am working on the checkout after I did the login. Thought
+it should be easy. But then I didn't start by creating an order
+scaffold, rather, I thought the cart would do much of the work.
+Since I could just print the cart out for the checkout page, and
+do some fake payment option in the view just to get started for
+later, when I would really look into creating the payment receiving
+part.
+
+Well, I was wrong. The order controller is very much needed, since although
+the cart has the "billing list" of items, they don't _persist_.
+Carts are attached to sessions, and could be gone after timeout.
+Once going to the payment, they should be inside the database
+to be persisted. At first I thought maybe I can refernce the cart_id, ha,
+nope. The cart doesn't persist, so the cart_id doesn't make sense.
+So I should just copy the cart's contents over, duplicate in the order,
+and then save it? Seems extra work.
+
+I'll take a look back into the book's approach.
